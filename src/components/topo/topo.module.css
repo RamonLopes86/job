@@ -1,0 +1,39 @@
+.boxTopo {
+
+    width: 100%;
+    text-align: center;
+    padding: 20px 10px;
+
+}
+
+
+.boxTopo > nav > ul {
+
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxTopo > nav > ul > .linkTopo{
+
+   color: rgba(0, 0, 0, 0.767);
+}
+
+.boxTopo > nav > ul > .linkTopo:nth-of-type(2){
+
+    color: var(--corroxo)
+}
+
+
+.boxTopo > nav > ul > .linkTopo:hover:not(.linkTopo:nth-of-type(2)){
+
+
+    color: var(--coramaforte);
+}
+
+.boxTopo > nav > ul .linkTopo:nth-of-type(2):hover{
+
+    color: var(--coramarelo);
+}
+
