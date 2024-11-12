@@ -3,36 +3,45 @@
     width: 100%;
     text-align: center;
     padding: 20px 10px;
+    
 
 }
 
+.boxTopo li {
 
-.boxTopo > nav > ul {
+    font-family: var(--popins);
+}
+
+
+.boxTopo > .navPrincipal > ul {
 
     display: flex;
     gap: 20px;
     align-items: center;
     justify-content: center;
+
+    flex-wrap: wrap;
 }
 
-.boxTopo > nav > ul > .linkTopo{
+.boxTopo > .navPrincipal > ul > .linkTopo{
 
    color: rgba(0, 0, 0, 0.767);
+  
 }
 
-.boxTopo > nav > ul > .linkTopo:nth-of-type(2){
+.boxTopo > .navPrincipal > ul > .linkTopo:nth-of-type(2){
 
     color: var(--corroxo)
 }
 
 
-.boxTopo > nav > ul > .linkTopo:hover:not(.linkTopo:nth-of-type(2)){
+.boxTopo > .navPrincipal > ul > .linkTopo:hover:not(.linkTopo:nth-of-type(2)){
 
 
     color: var(--coramaforte);
 }
 
-.boxTopo > nav > ul .linkTopo:nth-of-type(2):hover{
+.boxTopo > .navPrincipal > ul .linkTopo:nth-of-type(2):hover{
 
     color: var(--coramaforte);
 }

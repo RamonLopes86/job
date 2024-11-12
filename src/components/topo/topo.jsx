@@ -12,7 +12,7 @@ export default function Topo(){
 
         <section className={estiloTopo.boxTopo}>
 
-            <nav>
+            <nav className={estiloTopo.navPrincipal}>
 
                 <ul>
                     <Link href={'#'} className={estiloTopo.linkTopo}><li>Sobre</li></Link>
@@ -26,10 +26,19 @@ export default function Topo(){
 
                    
             </nav>
+
+
+
+
+            {/* Nav escondida */}
+
+                
+
+        </section>
+        
                     
                  
 
-        </section>
 
 
     )

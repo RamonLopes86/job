@@ -1,0 +1,349 @@
+.boxBanner{
+
+
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    min-height: 800px;
+    position: relative;
+    align-items: center;
+    z-index: 1;
+    overflow: hidden;
+   
+    
+    
+   
+    & .image{
+
+        width: 100%;
+        height: fit-content;
+    }
+
+    
+   
+
+  
+}
+
+.boxBanner .boxImagem{
+
+   width: 50%;
+   position: relative;
+
+
+   & .nuvem{
+
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    mix-blend-mode: darken;
+
+    animation-name: moveNuvem;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+   }
+
+   & .imgNuvem{
+
+    
+    top: -40px;
+    left: 5vw;
+    animation-delay: 600ms;
+    
+
+
+    }
+
+    & .imgNuvem1{
+
+        top: -100px;
+        left: 20vw;
+        animation-delay: 1s;
+
+        
+    }
+  
+    & .imgNuvem2{
+
+        top: 0;
+        right: 25vw;
+        animation-delay: 1.5s;
+    }
+
+    & .imgFoguete{
+
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        top: 150px;
+        left: -100px;
+        mix-blend-mode: darken;
+
+        animation-name: moveFoguete;
+        animation-duration: 8s;
+        
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        
+
+    }
+
+
+
+
+
+}
+
+.boxBanner .boxTexto{
+
+    width: 50%;
+    z-index: 1;
+    padding-left: 100px;
+    font-family: var(--popins);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+
+    & mark{
+
+        background-color:transparent;
+        color: var(--coramarelo);
+    }
+   
+
+    & h1{
+
+        font-size: 3.5rem;
+        text-transform: uppercase;
+        width: 100%;
+    }
+
+    & p{
+
+        font-size: 1.2rem;
+    }
+
+    & button{
+
+        max-width: 400px;
+        
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border: none;
+        background-color:#EEAB42;
+        color: white;
+        padding: 10px;
+        font-size: 1.3rem;
+        gap: 20px;
+
+
+        & .imgWpp{
+
+            width: 35px;
+            height: 35px;
+            mix-blend-mode: darken;
+        }
+
+    }
+ 
+ }
+
+
+ .boxBanner::after{
+
+    content:' ';
+    display: block;
+    position: absolute;
+    width: 100%;
+    min-height: 800px;
+    background-image: linear-gradient(to right , var(--corroxo) , transparent);
+
+    
+
+    
+}
+
+
+
+
+
+@media screen and (min-width:1920px) {
+
+    .boxImagem .image{
+
+        width: 1024px;
+        height: 100%;
+    }
+    
+}
+
+
+
+@media screen and (max-width:1310px) {
+
+    .boxBanner .boxTexto h1{
+
+        font-size: 2rem;
+
+    }
+
+
+    .boxBanner .boxImagem .imgFoguete{
+
+        width: 200px;
+        height: 200px;
+
+    }
+
+}
+
+
+
+
+@media screen and (max-width:1100px) {
+
+    .boxBanner{
+
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+    }
+
+
+
+
+    .boxBanner .boxTexto{
+
+        width: 100%;
+        padding: 40px 10px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        max-width: 900px;
+        margin: 0px auto;
+        gap: 40px;
+
+
+    }
+
+    .boxBanner .boxTexto  h1{
+
+        font-size: 6vw;
+    }
+       
+
+       
+
+
+
+    .boxBanner::after{
+
+        content:' ';
+        display: block;
+        position: absolute;
+        width: 100%;
+        min-height: 800px;
+        background-image: linear-gradient(to bottom , var(--corroxo) , transparent);
+    
+    }
+
+
+     .boxBanner .boxImagem{
+
+       width: 100%;
+       padding: 0px 40px;
+       margin: 0px auto;
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       justify-content: center;
+       aspect-ratio: 4/4;
+       object-fit: contain;
+
+        & .image{
+
+            width: 80vw;
+            
+        }
+
+
+        & .imgFoguete{
+
+            left: 0px;
+            width: 20vw;
+            height: fit-content;
+        }
+
+        & .imgNuvem{
+
+            left: 40px;
+        }
+
+        & .imgNuvem1{
+
+            left: 160px;
+        }
+            
+
+    }
+        
+    
+        
+
+}
+
+
+
+@keyframes moveNuvem {
+
+    to{
+
+        transform: translateX(-20px);
+        transition-timing-function: linear;
+        transition: 800ms;
+    }
+
+}
+
+
+
+
+
+@keyframes moveFoguete {
+
+    0% {
+        transform:  translateY(0) rotate(0deg);
+      }
+    
+      /* Etapa 1: Foguete sobe 100px */
+      25% {
+        transform: translateY(-200px) rotate(0deg);
+      }
+
+      35%{
+
+        transform: translateY(-200px) rotate(90deg);
+      }
+
+      100%{
+
+        transform: translateY(-200px) translateX(700px) rotate(90deg);
+        opacity: 0;
+      }
+
+    
+
+    }
+      
+    
+      
+   
+
