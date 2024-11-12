@@ -1,3 +1,5 @@
+
+
 .boxBanner{
 
 
@@ -241,6 +243,11 @@
     .boxBanner .boxTexto  h1{
 
         font-size: 6vw;
+    }
+
+    .boxBanner .boxTexto p {
+
+        border: none;
     }
        
 
