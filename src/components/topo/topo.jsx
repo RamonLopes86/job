@@ -2,7 +2,7 @@
 import estiloTopo from './topo.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
-import logo from '../../../public/logo.png'
+
 
 
 
@@ -17,10 +17,7 @@ export default function Topo(){
 
             <div className={estiloTopo.marca}>
                 <p>L</p>
-                <p>o</p>
-                <p>p</p>
-                <p>f</p>
-                <p>y</p>
+                <p>opfy</p>
                 
             </div>
 
@@ -32,7 +29,7 @@ export default function Topo(){
                     <Link href={'#'} className={estiloTopo.linkTopo}> <li>Modelos</li></Link>
                     <Link href={'#'} className={estiloTopo.linkTopo}><li>Negócio</li></Link>
                     <Link href={'#'} className={estiloTopo.linkTopo}> <li>Vantagens</li></Link>
-                    <Link href={'#'} className={estiloTopo.linkTopo}><li>Dúvidas Frequentes</li></Link>
+                    <Link href={'#'} className={estiloTopo.linkTopo}><li>Perguntas</li></Link>
                    
                 </ul>
 

@@ -137,7 +137,6 @@
     & button{
 
         max-width: 400px;
-        
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -149,6 +148,8 @@
         padding: 10px;
         font-size: 1.3rem;
         gap: 20px;
+        border-radius: 10px;
+        transition: all 400ms;
 
 
         & .imgWpp{
@@ -159,6 +160,30 @@
         }
 
     }
+
+
+   
+        
+    & button:hover > .imgWpp{
+
+        animation-name: animaWpp;
+        animation-duration: 300ms;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        mix-blend-mode:difference;
+    }
+
+
+    & button:hover{
+
+        background-color:#463894 ;
+        transition: all 400ms;
+    }
+
+
+
+
+
  
  }
 
@@ -365,7 +390,20 @@
 
     }
       
+@keyframes animaWpp {
+
     
-      
+        0%{
+
+            transform: translateX(-2px);
+        }
+
+        100%{
+
+            transform: translateX(4px);
+        }
+
+
+    }      
    
 

@@ -6,7 +6,7 @@ export const metadata = {
   description: "Criação de projetos personalizados com suporte vitalício",
 
   icons:{
-    icon:'logo.ico'
+    icon:'favico.png'
   }
 
 };
