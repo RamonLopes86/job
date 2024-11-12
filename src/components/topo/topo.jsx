@@ -1,6 +1,9 @@
 
 import estiloTopo from './topo.module.css';
 import Link from 'next/link';
+import Image from 'next/image';
+import logo from '../../../public/logo.png'
+
 
 
 
@@ -11,6 +14,15 @@ export default function Topo(){
     return(
 
         <section className={estiloTopo.boxTopo}>
+
+            <div className={estiloTopo.marca}>
+                <p>L</p>
+                <p>o</p>
+                <p>p</p>
+                <p>f</p>
+                <p>y</p>
+                
+            </div>
 
             <nav className={estiloTopo.navPrincipal}>
 
