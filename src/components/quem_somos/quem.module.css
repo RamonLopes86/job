@@ -1,7 +1,9 @@
 .boxPaiQuem{
 
-    background-image: linear-gradient(to bottom , var(--coramarelo) 40%    , transparent);
-    
+ 
+
+    background-color: rgba(170, 208, 236, 0.822);
+ 
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -19,6 +21,8 @@
     height: fit-content;
     padding: 100px 30px;
     position: relative;
+    margin-top: 50px;
+
 
 }
     
@@ -57,14 +61,14 @@
     top: 40%;
     left: -30%;
     background-color: white;
-    outline: 4px solid var(--corroxo);
+    border: 5px solid var(--corroxo);
     padding: 20px 10px;
     border-radius: 10px;
    color: rgba(0, 0, 0, 0.884);
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 
 
 
@@ -74,13 +78,14 @@
         text-align: center;
         width: 100%;
         font-size: 2rem;
+       color :var(--coramaforte);
     }
 
     & p{
 
         text-align: center;
         color: gray;
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
         
     & button{
@@ -102,7 +107,7 @@
 
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 15px;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -112,18 +117,24 @@
     & div{
 
         flex-basis: 300px;
-        border: 1px solid gray;
-        min-height: 300px;
+        outline: 2px solid var(--coramaforte);
+        min-height: 180px;
         display: flex;
         flex-direction: column;
         gap: 10px;
         align-items: center;
-        justify-content: space-around;
+        
 
+        & h2{
+
+            text-transform: uppercase;
+            font-size: 1rem;
+            padding: 10px;
+        }
 
         & p{
 
-            font-size: 1rem;
+            font-size: 0.8rem;
             text-align: left;
             padding-left: 10px;
             
@@ -132,3 +143,80 @@
 
 
 }
+
+
+
+
+@media screen and (max-width: 1270px) {
+
+
+    
+    .boxPaiQuem .boxImage .imgDev{
+
+
+        width: 700px;
+        height: 700px;
+    }
+
+
+    .boxPaiQuem .boxImage .boxTexto{
+
+        max-width: 400px;
+        max-height: 300px;
+        overflow-y: scroll;
+        border-left: 5px solid var(--corroxo);
+        border-top: 5px solid var(--corroxo);
+        border-bottom: 5px solid var(--corroxo);
+        border-right: none;
+        left: -20%;
+    }
+
+    .boxPaiQuem .boxImage .boxTexto::-webkit-scrollbar{
+
+        
+        width: 5px;
+    
+    }
+
+    .boxPaiQuem .boxImage .boxTexto::-webkit-scrollbar-thumb{
+
+        background-color: var(--coramarelo);
+        border-radius: 10px;
+    }
+
+    .boxPaiQuem .boxImage .boxTexto::-webkit-scrollbar-track{
+
+        background-color: var(--corroxo);
+    }
+    
+
+    .boxPaiQuem .boxImage .boxTexto .boxBlocosTx{
+
+        flex-wrap: wrap;
+    }
+
+
+    .boxPaiQuem .boxImage::after{
+
+        content: '';
+        display: block;
+        width: 100px;
+        height: 100px;
+        border: 35px solid var(--corroxo);
+        position: absolute;
+        border-radius: 50%;
+        right: 10%;
+        bottom: 10%;
+    }
+
+
+}
+
+
+
+
+/* @media screen and (max-width:950px) {
+
+
+
+} */
