@@ -108,8 +108,49 @@
 }
 
 
+.boxTopo .menuHam{
+
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 20px;
+    transform: translateX(-50vw);
+    color: var(--coramaforte);
+    cursor: pointer;
+   
+}
+    
+
+
+@media screen and (max-width:950px) {
+
+    .boxTopo{
+
+        padding: 30px 10px;
+    }
+
+    .boxTopo .marca{
+
+        left: auto;
+        right: 10px;
+    }
+
+    .boxTopo .navPrincipal{
+
+        display: none;
+    }
+
+    .boxTopo .menuHam{
+
+        transition: all 400ms;
+        transform: translateX(0);
+    }
+
+}
 
 @media screen and (max-width:1100px) {
+
+   
 
    .boxTopo .navPrincipal ul {
 

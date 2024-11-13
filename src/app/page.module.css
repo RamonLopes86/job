@@ -1,0 +1,12 @@
+.animaNavOn{
+
+    width: 350px;
+    transition: all 500ms;
+
+}
+
+.animaNavOff{
+
+    width: 0;
+    transition: all 500ms;
+}

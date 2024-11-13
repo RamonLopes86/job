@@ -2,18 +2,22 @@
 import estiloTopo from './topo.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 
 
 
 
 
-export default function Topo(){
+export default function Topo(props){
 
 
     return(
 
         <section className={estiloTopo.boxTopo}>
+
+            <FontAwesomeIcon onClick={() => props.click('abrir')} className={estiloTopo.menuHam} icon={faBars}/>
 
             <div className={estiloTopo.marca}>
                 <p>L</p>
@@ -39,7 +43,7 @@ export default function Topo(){
 
 
 
-            {/* Nav escondida */}
+         
 
                 
 
