@@ -21,7 +21,7 @@ export default function Quem(){
                 <div className={estiloQuem.boxTexto}>
 
                     <h1>O que construimos?</h1>
-                    <p>Um site é muito mais do que uma página comum na internet; ele representa a entrada principal para o seu negócio, funcionando como uma vitrine que exibe seus produtos ou serviços.</p>
+                    <p>Um site é muito mais do que uma página comum na internet ,ele representa a entrada principal para o seu negócio, funcionando como uma vitrine que exibe seus produtos ou serviços.</p>
                     <button>Dúvidas ? <Image className={estiloQuem.iconWpp} src={wpp} alt='icone do whats app'/>  </button>
 
                     <div className={estiloQuem.boxBlocosTx}>
