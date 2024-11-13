@@ -1,0 +1,71 @@
+
+.boxQuem{
+
+   background-image: linear-gradient( to right , #9190C9 40% , transparent);
+   min-height: 800px;
+    display: grid;
+    grid-template-columns: repeat( 2 , 1fr);
+    
+    overflow: hidden;
+    position: relative;
+    z-index: -2;
+  
+
+}
+
+.boxQuem > .boxImagem {
+
+    
+  
+   position: relative;
+  background-image: url(../../../public/sucesso.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+    width:100%;
+    z-index: 1;
+   border-radius: 0px 300px 300px 0px;
+   box-shadow: 0px 0px 20px rgba(8, 8, 8, 0.452);
+
+   
+
+   
+}
+
+
+.boxQuem >  .boxTexto {
+
+    background-color: red;
+
+ }
+
+
+
+
+ 
+ 
+    
+
+   
+
+
+
+    
+
+
+
+
+   
+    
+
+
+
+
+    
+    
+
+
+
+
+
+
