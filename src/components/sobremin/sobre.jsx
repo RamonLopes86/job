@@ -41,7 +41,7 @@ export default function Sobre() {
 
                     <div className={estiloSobre.boxIconesFerramentas}>
 
-                        {/* <Image/> */}
+                        
 
                     </div>
                 </div>
