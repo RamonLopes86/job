@@ -1,6 +1,7 @@
 import estiloSobre from './sobre.module.css';
 import Image from 'next/image';
 import ramon from '../../../public/ramon2.png'
+import emo from '../../../public/dev.png'
 
 
 
@@ -24,8 +25,8 @@ export default function Sobre() {
 
                 <div className={estiloSobre.define}>
 
-                    {/* <Image src={}/> */}
-                    <p>Olá, me hamo Ramon , sou Desenvolvedor Web e vou te ajudar a comestratégias visuais a aprimorar sua imagem e seu alcançe profisioinal , transformando ideias em realidade com atendimento personalizado e consultoria vitalícia</p>
+                    <Image src={emo}/>
+                    <p>Olá, me hamo Ramon , sou Desenvolvedor Web e vou te ajudar a com estratégias visuais a aprimorar sua imagem e seu alcançe profisioinal , transformando ideias em realidade com atendimento personalizado e consultoria vitalícia</p>
 
                 </div>
                 <div className={estiloSobre.skills}>
@@ -41,7 +42,7 @@ export default function Sobre() {
 
                     <div className={estiloSobre.boxIconesFerramentas}>
 
-                        
+
 
                     </div>
                 </div>
