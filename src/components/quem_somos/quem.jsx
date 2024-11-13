@@ -35,7 +35,7 @@ export default function Quem(){
                                 <p>Para empresas que buscam se destacar da concorrência e conquistar uma forte presença digital por meio de uma página personalizada de alto impacto.</p>
                         </div>
                         <div>
-                            <h2>Loja Virtual</h2>
+                            <h2>Loja virtual</h2>
                             <p>Dê aos seus clientes a liberdade de adquirir seus produtos de qualquer lugar e a qualquer hora do dia!</p>
                         </div>
 
@@ -63,7 +63,7 @@ export default function Quem(){
                                 <p>Para empresas que buscam se destacar da concorrência e conquistar uma forte presença digital por meio de uma página personalizada de alto impacto.</p>
                         </div>
                         <div>
-                            <h2>Loja Virtual</h2>
+                            <h2>Loja virtual</h2>
                             <p>Dê aos seus clientes a liberdade de adquirir seus produtos de qualquer lugar e a qualquer hora do dia!</p>
                         </div>
 
