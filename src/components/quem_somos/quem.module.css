@@ -307,8 +307,9 @@
 
         font-family: var(--popins);
         position: static;
-        max-width: 650px;
-        min-height: fit-content;
+        min-width:calc(100% - 40px);
+        margin: 0px 20px;
+        min-height: 1000px;
         background-color: white;
         padding: 20px 10px;
         border-radius: 10px;
@@ -317,12 +318,13 @@
         flex-direction: column;
         align-items: center;
         gap: 20px;
-       
+       overflow: visible;
+        border: 4px solid var(--corroxo);
             
+    }
         
         
 
-    }
 
 
     .boxPaiQuem .boxImage .boxTexto .boxBlocosTx{
