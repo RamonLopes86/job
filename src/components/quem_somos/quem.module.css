@@ -309,7 +309,7 @@
         position: static;
         min-width:calc(100% - 40px);
         margin: 0px 20px;
-        min-height: 1000px;
+        min-height: 980px;
         background-color: white;
         padding: 20px 10px;
         border-radius: 10px;
