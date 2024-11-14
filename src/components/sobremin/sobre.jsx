@@ -53,7 +53,7 @@ export default function Sobre() {
                         <Image className={estiloSobre.imgEmoji} alt='imagem de um programador e seu computador' src={emo} />
                     </div>
 
-                    <p>Olá, me hamo Ramon , sou Desenvolvedor Web e vou te ajudar  com estratégias visuais a aprimorar sua imagem e seu alcançe profisioinal , transformando ideias em realidade com atendimento personalizado e consultoria vitalícia</p>
+                    <p>Olá, me hamo Ramon , sou Desenvolvedor Web e vou te ajudar  com estratégias visuais a aprimorar sua imagem e seu alcançe profisioinal , transformando ideias em realidade com atendimento personalizado e <strong style={{textTransform:'uppercase'}}>consultoria vitalícia</strong></p>
 
                 </div>
 
@@ -63,7 +63,7 @@ export default function Sobre() {
                         <Image className={estiloSobre.iconQc} alt='imagem de pessoas unindo parte de quebra-cabeça' src={qc} />
                     </div>
 
-                    <p> Seu negócio ganha alcançe no digital , alem de  ampliar sua visibilidade , dando destaque ao que mais importa , construir uma imagem de sucesso com projetos personalizados e consultoria vitalícia.</p>
+                    <p> Seu negócio ganha alcançe no digital , alem de  ampliar sua visibilidade , dando destaque ao que mais importa , construir uma imagem de sucesso com projetos personalizados e <strong style={{textTransform:'uppercase'}}>consultoria vitalícia.</strong></p>
 
                 </div>
 
@@ -76,7 +76,7 @@ export default function Sobre() {
                     </div>
 
                     <p>
-                        Ferramentas  e conhecimentos importantes na sua aplicação 
+                        Ferramentas  e conhecimentos importantes aplicados ao seu projeto para te destacar no mercado
                     </p>
 
                     <div className={estiloSobre.boxIconesFerramentas}>

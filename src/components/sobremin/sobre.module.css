@@ -291,6 +291,8 @@
 
    .boxQuem .boxImagem{
 
+      width: calc(100% - 20px);
+      margin: 10px;
       
 
 
@@ -298,11 +300,11 @@
 
         position: static;
         width: 100%;
-
+         border-radius: 10px;
         background-image: url(../../../public/des.jpg);
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover
+        background-size: cover;
         background-color: transparent;
         
        
@@ -380,7 +382,7 @@
 
    .boxQuem .boxTexto > .define p {
 
-      font-size: 1.1rem;
+      font-size: 1.3rem;
       text-align: center;
      
 
@@ -388,7 +390,7 @@
 
    .boxQuem .boxTexto > .skills p {
 
-      font-size: 1.1rem;
+      font-size: 1.3rem;
       text-align: center;
      
 
@@ -396,19 +398,12 @@
 
    .boxQuem .boxTexto > .ferramentas p {
 
-      font-size: 1.1rem;
+      font-size: 1.3rem;
       text-align: center;
      
 
    }
       
-
-
-  
-   
-      
-     
-
    
    .boxQuem .boxTexto .define{
 
@@ -431,6 +426,37 @@
       min-height: 600px;
 
    }
+
+
+}
+
+
+@media screen and (max-width:360px) {
+
+   .boxQuem .boxTexto > .define p {
+
+      font-size: 1.099rem;
+      text-align: left;
+     
+
+   }
+
+   .boxQuem .boxTexto > .skills p {
+
+      font-size: 1.099rem;
+      text-align: left;
+     
+
+   }
+
+   .boxQuem .boxTexto > .ferramentas p {
+
+      font-size: 1.099rem;
+      text-align: left;
+      padding: 20px 10px 0px 10px;
+      
+   }      
+     
 
 
 }
