@@ -4,7 +4,7 @@
    background-image: linear-gradient( to right , #9190C9 40% , transparent);
    min-height: 800px;
     display: grid;
-    grid-template-columns: repeat( 2 , 1fr);
+    grid-template-columns: 1fr 2fr;
     gap: 20px;
     overflow: hidden;
     position: relative;
@@ -15,20 +15,41 @@
 
 .boxQuem > .boxImagem {
 
+  position: relative;
+  
     
-  
-   position: relative;
-  background-image: url(/sucesso.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: right;
-  width: 100%;
-   
-   border-radius: 0px 300px 300px 0px;
+  & .back{
+
+   width: 500px;
+   min-height: 600px;
+   background-color: var(--coramaforte);
+   position: absolute;
+   left: 10%;
+   top: 10%;
+  }
+
+
+  & .front{
+
+      width: 500px;
+      min-height: 600px;
+
+      position: absolute;
+      left: 13%;
+      top: 10%;
+
+
+      & .imgBack{
+
+         width: 100%;
+         height: 600px;
+         object-fit: cover;
+         object-position: center;
+      }
+  }
    
 
 
-  
 
 }
 

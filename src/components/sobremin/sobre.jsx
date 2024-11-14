@@ -11,6 +11,8 @@ import wp from '../../../public/worpress.png'
 import ht from '../../../public/html.png'
 import cs from '../../../public/css.png'
 import fig from '../../../public/figma.png'
+import pc from '../../../public/des.jpg'
+
 
 
 
@@ -31,7 +33,13 @@ export default function Sobre() {
 
             <section className={estiloSobre.boxImagem}>
 
+                    <section className={estiloSobre.back}>
 
+                            <div className={estiloSobre.front}>
+                                <Image className={estiloSobre.imgBack} src={pc} alt='imagem de um computador'/>
+                            </div>
+
+                    </section>
 
             </section>
 
@@ -45,7 +53,7 @@ export default function Sobre() {
                         <Image className={estiloSobre.imgEmoji} alt='imagem de um programador e seu computador' src={emo} />
                     </div>
 
-                    <p>Olá, me hamo Ramon , sou Desenvolvedor Web e vou te ajudar a com estratégias visuais a aprimorar sua imagem e seu alcançe profisioinal , transformando ideias em realidade com atendimento personalizado e consultoria vitalícia</p>
+                    <p>Olá, me hamo Ramon , sou Desenvolvedor Web e vou te ajudar  com estratégias visuais a aprimorar sua imagem e seu alcançe profisioinal , transformando ideias em realidade com atendimento personalizado e consultoria vitalícia</p>
 
                 </div>
 
