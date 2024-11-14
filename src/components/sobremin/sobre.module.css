@@ -21,7 +21,7 @@
   background-image: url(/sucesso.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: right;
   width: 100%;
    
    border-radius: 0px 300px 300px 0px;
@@ -271,8 +271,10 @@
    .boxQuem .boxImagem{
 
       min-width: 100%;
-      border-radius: 0px 0px 40px 40px;
+      border-radius: 0px 0px 0px 0px;
       min-height: 400px;
+      background-position: center;
+      background-attachment: fixed;
       
    }
 
@@ -335,6 +337,33 @@
       
 
    }
+
+
+   .boxQuem .boxTexto > .define p {
+
+      font-size: 1.1rem;
+      text-align: center;
+     
+
+   }
+
+   .boxQuem .boxTexto > .skills p {
+
+      font-size: 1.1rem;
+      text-align: center;
+     
+
+   }
+
+   .boxQuem .boxTexto > .ferramentas p {
+
+      font-size: 1.1rem;
+      text-align: center;
+     
+
+   }
+      
+
 
   
    
