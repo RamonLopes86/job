@@ -78,7 +78,7 @@ export default function Sobre() {
 
                                 return(
 
-                                    <Image className={estiloSobre.iconLg} key={index} src={img}/>
+                                    <Image alt='icones de ling de programação' className={estiloSobre.iconLg} key={index} src={img}/>
                                 )
                             })
                         }
