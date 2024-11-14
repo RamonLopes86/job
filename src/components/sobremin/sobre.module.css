@@ -45,6 +45,9 @@
          height: 600px;
          object-fit: cover;
          object-position: center;
+        
+         
+         
       }
   }
    
@@ -328,7 +331,7 @@
       align-items: center; */
 
       display: grid;
-      grid-template-columns: repeat(auto-fit , 250px);
+      grid-template-columns: repeat(auto-fit , 200px);
       align-items: center;
       justify-items: center;
       align-content: center;
@@ -341,16 +344,20 @@
    .boxQuem .boxTexto .define{
 
       top: 0;
+      
+
    }
 
    .boxQuem .boxTexto .ferramentas{
 
       top: 0;
+     
    }
 
    .boxQuem .boxTexto .skills{
 
       top: 0;
+   
    }
       
 
