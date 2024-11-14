@@ -258,6 +258,113 @@
 
 
 
+ @media screen and (max-width:1410px) {
+
+   .boxQuem{
+
+     /* display: flex;
+     flex-direction: column; */
+      overflow: visible;
+     grid-template-columns: repeat(1 , 1fr);
+      grid-row-gap: 50px;
+   }
+
+   .boxQuem .boxImagem{
+      min-width: 100%;
+      border-radius: 0px 0px 40px 40px;
+      min-height: 400px;
+      
+   }
+
+
+   .boxQuem .boxTexto{
+
+      width: 100%;
+      /* justify-content: space-around;
+      flex-wrap: wrap;
+      align-items: center; */
+
+      display: grid;
+      grid-template-columns: repeat(auto-fit , 250px);
+      align-items: center;
+      justify-items: center;
+      align-content: center;
+      justify-content: space-around;
+   }
+
+
+
+
+   .boxQuem .boxTexto .define{
+
+      top: 0;
+   }
+
+   .boxQuem .boxTexto .ferramentas{
+
+      top: 0;
+   }
+
+   .boxQuem .boxTexto .skills{
+
+      top: 0;
+   }
+      
+
+ }
+
+
+
+
+ @media screen and (max-width:580px) {
+
+   .boxQuem .boxTexto{
+
+       grid-template-columns: repeat(1 , minmax(250px, 1fr));
+   }
+
+   .boxQuem .boxTexto div div {
+
+      height: 50%;
+      width: 98%;
+      
+
+   }
+
+  
+   
+      
+     
+
+   
+   .boxQuem .boxTexto .define{
+
+      width: 100%;
+      min-height: 600px;
+      
+    
+   }
+
+   .boxQuem .boxTexto .ferramentas{
+
+      width: 100%;
+      min-height: 600px;
+   
+   }
+
+   .boxQuem .boxTexto .skills{
+
+      width: 100%;
+      min-height: 600px;
+
+   }
+
+
+}
+
+
+
+
 
 
  
