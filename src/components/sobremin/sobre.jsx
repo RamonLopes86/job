@@ -47,7 +47,7 @@ export default function Sobre() {
 
             <section className={estiloSobre.boxTexto}>
 
-                <div className={estiloSobre.define}>
+                <div className={`${estiloSobre.define} ${estiloSobre.boxGeral}`}>
 
                     <div className={estiloSobre.boxEmoji}>
                         <Image className={estiloSobre.imgEmoji} alt='imagem de um programador e seu computador' src={emo} />
@@ -57,7 +57,7 @@ export default function Sobre() {
 
                 </div>
 
-                <div className={estiloSobre.skills}>
+                <div className={`${estiloSobre.skills} ${estiloSobre.boxGeral}`}>
 
                     <div className={estiloSobre.boxEmoji2}>
                         <Image className={estiloSobre.iconQc} alt='imagem de pessoas unindo parte de quebra-cabeça' src={qc} />
@@ -67,7 +67,7 @@ export default function Sobre() {
 
                 </div>
 
-                <div className={estiloSobre.ferramentas}>
+                <div className={`${estiloSobre.ferramentas} ${estiloSobre.boxGeral}`}>
 
                     <div className={estiloSobre.boxEmoji3}>
 

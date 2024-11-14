@@ -68,7 +68,7 @@
 
     display: flex;
     flex-direction: row;
-    gap: 25px;
+    gap: 40px;
     align-items: center;
     justify-content: center;
     padding: 0px 20px;
@@ -80,14 +80,17 @@
 
     
 
-.boxQuem .boxTexto > div{
+.boxQuem .boxTexto  .boxGeral{
 
-   width: 250px;
+   width: 300px;
    border-radius: 15px;
-   box-shadow: 4px -4px 2px rgba(167, 167, 167, 0.61) ;
-   outline: 1px solid rgba(167, 167, 167, 0.61) ;
-  
+   min-height: 550px;
+   
+   
 }
+ 
+   
+  
 
   
 
@@ -98,8 +101,8 @@
 
    
    position: relative;
-   min-height: 500px;
-   top: -100px;
+ 
+   top: -50px;
    display: flex;
    flex-direction: column;
    text-align: center;
@@ -107,7 +110,7 @@
    gap: 20px;
    background-color: white;
    
- 
+   
 
 
    & p{
@@ -129,7 +132,9 @@
   background-color: var(--corroxo);
   border-radius: 10px 10px 200px 10px;
   transition: all 800ms;
-   position: absolute;
+
+   
+   
    top: 0;
    margin: 3px;
 
@@ -161,15 +166,15 @@
 
   
    position: relative;
-   min-height: 500px;
+  
    top: 80px;
    display: flex;
    flex-direction: column;
    text-align: center;
-   justify-content: flex-end;
-   
+   justify-content: space-between;
    background-color: white;
-   position: relative;
+   
+  
    
  
 
@@ -185,11 +190,10 @@
       background-color: var(--coramaforte);
       border-radius: 10px 10px 200px 10px;
       transition: all 800ms;
-     position: absolute;
-     top: 0;
-     min-height: 260px;
-     margin: 3px;
       
+     top: 0;
+     min-height: 320px;
+     margin: 3px;      
    }
 
    & .iconQc{
@@ -206,15 +210,15 @@
 
  .boxQuem .boxTexto .ferramentas{
 
-    min-height: 500px;
+   
     background-color: white;
     position: relative;
-    top: -100px;
+    top: -50px;
     cursor: pointer;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
 
 
 
@@ -230,16 +234,12 @@
     & .boxEmoji3{
 
       background-color:#88E3FB;
-      border-radius: 10px 10px 180px 10px;
+      border-radius: 10px 10px 200px 10px;
       transition: all 800ms;
-      position: absolute;
-      top: 0;
-      min-height: 230px;
+      min-height: 270px;
       margin: 3px;
-
-
-    
-
+      
+   
 
       & .imgLinguagem{
 
@@ -282,7 +282,7 @@
 
 
 
- @media screen and (max-width:1580px) {
+ @media screen and (max-width:1714px) {
 
    .boxQuem{
 
@@ -290,6 +290,7 @@
       overflow: visible;
      grid-template-columns: repeat(1 , 1fr);
       grid-row-gap: 50px;
+      padding-bottom: 20px;
    }
 
    .boxQuem .boxImagem{
@@ -323,45 +324,53 @@
    }
 
 
-   .boxQuem .boxTexto{
 
-      width: 100%;
-      /* justify-content: space-around;
-      flex-wrap: wrap;
-      align-items: center; */
+.boxQuem .boxTexto{
 
-      display: grid;
-      grid-template-columns: repeat(auto-fit , 200px);
-      align-items: center;
-      justify-items: center;
-      align-content: center;
-      justify-content: space-around;
-   }
-
-
-
-
-   .boxQuem .boxTexto .define{
-
-      top: 0;
-      
-
-   }
-
-   .boxQuem .boxTexto .ferramentas{
-
-      top: 0;
-     
-   }
-
-   .boxQuem .boxTexto .skills{
-
-      top: 0;
+   width: 100%;
    
-   }
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-around;
+   flex-wrap: wrap;
+}
+
+.boxQuem .boxTexto .boxGeral {
+
+      top: 0;
+      min-height: 650px;
+      justify-content: space-between;
+      width: 400px;
+
+
+      & p{
+
+         font-size: 1.2rem;
+         text-align: center;
+      }
+      
+      
+      & .boxEmoji2{
+
+         min-height: 400px;
+      }
+
+
+      & .boxEmoji3{
+
+         min-height: 350px;
+      }
+     
+}
+  
+
+   
       
 
  }
+
+
 
 
 
