@@ -2,12 +2,14 @@
 .boxQuem{
 
    background-image: linear-gradient( to right , #9190C9 40% , transparent);
-   min-height: 800px;
+    min-height: 800px;
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 20px;
     overflow: hidden;
     position: relative;
+
+   
 
    }
   
@@ -57,8 +59,6 @@
 }
 
 
-
-   
 
    
 
@@ -325,129 +325,115 @@
 
 
 
+
+
+
+  
 .boxQuem .boxTexto{
 
-   width: 100%;
-   
-   display: flex;
-   flex-direction: row;
+   display: grid;
+   grid-template-columns: repeat(auto-fit , minmax(400px , 1fr));
    align-items: center;
-   justify-content: space-around;
-   flex-wrap: wrap;
-}
-
-.boxQuem .boxTexto .boxGeral {
-
-      top: 0;
-      min-height: 650px;
-      justify-content: space-between;
-      width: 400px;
-
-
-      & p{
-
-         font-size: 1.2rem;
-         text-align: center;
-      }
-      
-      
-      & .boxEmoji2{
-
-         min-height: 400px;
-      }
-
-
-      & .boxEmoji3{
-
-         min-height: 350px;
-      }
-     
-}
-  
-
+   align-content: center;
+   justify-items: center;
    
+   gap: 20px;
+   
+
+}
+
+.boxQuem .boxTexto .boxGeral{
+
+   top: 0;
+   min-height: 650px;
+   justify-content: space-between;
+   width: 400px;
+
+
+   & p{
+
+      font-size: 1.2rem;
+      text-align: center;
+   }
+   
+   
+   & .boxEmoji2{
+
+      min-height: 400px;
+   }
+
+
+   & .boxEmoji3{
+
+      min-height: 350px;
+   }
+
+
+}
       
 
  }
 
 
 
+@media screen and (max-width:500px) {
 
-
-
- @media screen and (max-width:580px) {
-
-   .boxQuem{
-
-      padding-bottom: 20px;
-   }
 
    .boxQuem .boxTexto{
 
-       grid-template-columns: repeat(1 , minmax(250px, 1fr));
-   }
-
-   .boxQuem .boxTexto div div {
-
-      height: 50%;
-      width: 98%;
-      
-
-   }
-
-
-   .boxQuem .boxTexto > .define p {
-
-      font-size: 1.3rem;
-      text-align: center;
-     
-
-   }
-
-   .boxQuem .boxTexto > .skills p {
-
-      font-size: 1.3rem;
-      text-align: center;
-     
-
-   }
-
-   .boxQuem .boxTexto > .ferramentas p {
-
-      font-size: 1.3rem;
-      text-align: center;
-     
-
-   }
-      
-   
-   .boxQuem .boxTexto .define{
-
-      width: 100%;
-      min-height: 600px;
-      
-    
-   }
-
-   .boxQuem .boxTexto .ferramentas{
-
-      width: 100%;
-      min-height: 600px;
+      display: grid;
+      grid-template-columns: repeat(1 , 1fr);
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+      justify-items: center;
    
    }
 
-   .boxQuem .boxTexto .skills{
-
-      width: 100%;
-      min-height: 600px;
-
-   }
+   .boxQuem .boxTexto .boxGeral{
 
 
+         width: 100%;
+
+
+      }
+
+
+      
+
+      .boxQuem .boxTexto > .define p {
+
+         font-size: 1.099rem;
+         text-align: center;
+        
+   
+      }
+   
+      .boxQuem .boxTexto > .skills p {
+   
+         font-size: 1.099rem;
+         text-align: center;
+        
+   
+      }
+   
+      .boxQuem .boxTexto > .ferramentas p {
+   
+         font-size: 1.099rem;
+         text-align: center;
+         padding: 20px 10px 0px 10px;
+         
+      }      
+
+
+     
+ 
 }
 
 
-@media screen and (max-width:360px) {
+
+
+/* @media screen and (max-width:360px) {
 
    .boxQuem .boxTexto > .define p {
 
@@ -475,7 +461,7 @@
      
 
 
-}
+} */
 
 
 
