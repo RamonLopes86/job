@@ -8,10 +8,10 @@
     gap: 20px;
     overflow: hidden;
     position: relative;
-    z-index: -2;
+
+   }
   
 
-}
 
 .boxQuem > .boxImagem {
 
@@ -23,11 +23,15 @@
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-    z-index: 1;
+   
    border-radius: 0px 300px 300px 0px;
    
 
+
+  
+
 }
+
 
 
    
@@ -48,41 +52,50 @@
     font-family:var(--popins);
 
 }
-    
-    
-
- .boxQuem .boxTexto > div{
-
-    width: 250px;
-    border-radius: 15px;
-
    
+
+    
+
+.boxQuem .boxTexto > div{
+
+   width: 250px;
+   border-radius: 15px;
+   box-shadow: 4px -4px 2px rgba(167, 167, 167, 0.61) ;
+   outline: 1px solid rgba(167, 167, 167, 0.61) ;
+  
 }
 
+  
 
 
-   
 
- .boxQuem .boxTexto div:nth-of-type(1){
+
+ .boxQuem .boxTexto .define {
 
    
    position: relative;
-
-   
+   min-height: 500px;
+   top: -100px;
    display: flex;
    flex-direction: column;
    text-align: center;
+   justify-content: flex-end;
    gap: 20px;
    background-color: white;
    
+ 
 
 
    & p{
 
       font-size: 1rem;
-      color: gray;
+      color: rgba(0, 0, 0, 0.699);
       padding: 10px;
+      text-align: left;
+     
    }
+   
+      
    
 }
    
@@ -92,6 +105,13 @@
   background-color: var(--corroxo);
   border-radius: 10px 10px 200px 10px;
   transition: all 800ms;
+   position: absolute;
+   top: 0;
+   margin: 3px;
+
+ 
+
+
 
 
 
@@ -106,33 +126,132 @@
  }
 
 
- .boxQuem .boxTexto .define .boxEmoji:hover{
-
-   display: none;
- }
-
-
+ 
 }
+
+
 
 
 
  .boxQuem .boxTexto .skills{
 
   
-    min-height: 400px;
-    background-color: gray;
-    position: relative;
-    top: 100px;
+   position: relative;
+   min-height: 500px;
+   top: 80px;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   justify-content: flex-end;
+   
+   background-color: white;
+   position: relative;
+   
+ 
+
+   & p{
+
+      color: rgba(0, 0, 0, 0.699);
+      padding: 10px;
+      text-align: left;
+   }
+
+   & .boxEmoji2{
+
+      background-color: var(--coramaforte);
+      border-radius: 10px 10px 200px 10px;
+      transition: all 800ms;
+     position: absolute;
+     top: 0;
+     min-height: 260px;
+     margin: 3px;
+      
+   }
+
+   & .iconQc{
+
+      width: 80%;
+      height: 80%;
+      position: relative;
+      left: -10px;
+      top: -10px;
+      
+   }
 
  }
 
  .boxQuem .boxTexto .ferramentas{
 
-    min-height: 400px;
-    background-color: gray;
+    min-height: 500px;
+    background-color: white;
     position: relative;
     top: -100px;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+
+
+    & p{
+
+      
+      padding: 40px 10px;
+      color: rgba(0, 0, 0, 0.699);
+      text-align: left;
+    }
+
+
+    & .boxEmoji3{
+
+      background-color:#88E3FB;
+      border-radius: 10px 10px 180px 10px;
+      transition: all 800ms;
+      position: absolute;
+      top: 0;
+      min-height: 230px;
+      margin: 3px;
+
+
+    
+
+
+      & .imgLinguagem{
+
+         height: 80%;
+         width: 80%;
+         top: 5px;
+         left: 10px;
+         position: relative;
+      }
+
+    }
+
+
+
+
+    & .boxIconesFerramentas{
+
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      padding: 10px;
+     
+      
+
+
+
+      & .iconLg{
+
+         width: 50px;
+         height: 50px;
+      }
+
+    }
 
  }
 

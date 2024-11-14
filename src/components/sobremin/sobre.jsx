@@ -1,12 +1,28 @@
 import estiloSobre from './sobre.module.css';
 import Image from 'next/image';
-import ramon from '../../../public/ramon2.png'
 import emo from '../../../public/dev.png'
+import qc from '../../../public/negocio.png'
+import linguagem from '../../../public/linguagem.png'
+import js from '../../../public/js.png'
+import rc from '../../../public/rc.png'
+import sql from '../../../public/sql.png'
+import mysql from '../../../public/mysql.png'
+import wp from '../../../public/worpress.png'
+import ht from '../../../public/html.png'
+import cs from '../../../public/css.png'
+import fig from '../../../public/figma.png'
+
+
+
 
 
 
 
 export default function Sobre() {
+
+
+    const lg = [js,rc,sql,mysql,wp,ht,cs,fig]
+
 
     return (
 
@@ -15,37 +31,57 @@ export default function Sobre() {
 
             <section className={estiloSobre.boxImagem}>
 
-                {/* imagem com background image url */}
+
 
             </section>
 
-        
+
 
             <section className={estiloSobre.boxTexto}>
 
                 <div className={estiloSobre.define}>
 
                     <div className={estiloSobre.boxEmoji}>
-                        <Image className={estiloSobre.imgEmoji} alt='imagem de um programador e seu computador' src={emo}/>
+                        <Image className={estiloSobre.imgEmoji} alt='imagem de um programador e seu computador' src={emo} />
                     </div>
-                    
+
                     <p>Olá, me hamo Ramon , sou Desenvolvedor Web e vou te ajudar a com estratégias visuais a aprimorar sua imagem e seu alcançe profisioinal , transformando ideias em realidade com atendimento personalizado e consultoria vitalícia</p>
 
                 </div>
-                
+
                 <div className={estiloSobre.skills}>
-                   <p> Seu negócio ganha alcançe no digital , alem de  ampliar sua visibilidade , dando destaque ao que mais importa , construir uma imagem de sucesso com projetos personalizados e consultoria vitalícia.</p>
+
+                    <div className={estiloSobre.boxEmoji2}>
+                        <Image className={estiloSobre.iconQc} alt='imagem de pessoas unindo parte de quebra-cabeça' src={qc} />
+                    </div>
+
+                    <p> Seu negócio ganha alcançe no digital , alem de  ampliar sua visibilidade , dando destaque ao que mais importa , construir uma imagem de sucesso com projetos personalizados e consultoria vitalícia.</p>
 
                 </div>
 
                 <div className={estiloSobre.ferramentas}>
 
+                    <div className={estiloSobre.boxEmoji3}>
+
+                        <Image alt='imagem de um homem em frente a um computador' className={estiloSobre.imgLinguagem} src={linguagem} />
+
+                    </div>
+
                     <p>
-                        ferramentas importantes e conhecimento na sua aplicação são fundamentais e servirá para direciona-los a melhor forma de alcançar visibilidade e consequentemente maior captação de clientes para seu negócio
+                        ferramentas  e conhecimentos importantes na sua aplicação 
                     </p>
 
                     <div className={estiloSobre.boxIconesFerramentas}>
 
+                        {
+                            lg.map((img , index)=>{
+
+                                return(
+
+                                    <Image className={estiloSobre.iconLg} key={index} src={img}/>
+                                )
+                            })
+                        }
 
 
                     </div>
