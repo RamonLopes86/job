@@ -76,7 +76,7 @@ export default function Sobre() {
                     </div>
 
                     <p>
-                        ferramentas  e conhecimentos importantes na sua aplicação 
+                        Ferramentas  e conhecimentos importantes na sua aplicação 
                     </p>
 
                     <div className={estiloSobre.boxIconesFerramentas}>

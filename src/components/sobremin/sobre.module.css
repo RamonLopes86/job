@@ -279,7 +279,7 @@
 
 
 
- @media screen and (max-width:1410px) {
+ @media screen and (max-width:1580px) {
 
    .boxQuem{
 
@@ -291,11 +291,26 @@
 
    .boxQuem .boxImagem{
 
-      min-width: 100%;
-      border-radius: 0px 0px 0px 0px;
-      min-height: 400px;
-      background-position: center;
-      background-attachment: fixed;
+      background-color: red;
+
+
+     & .back {
+
+        position: static;
+        width: 100%;
+
+        background-image: url(../../../public/des.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+
+        & .front{
+
+            display: none;
+        }
+         
+      }
       
    }
 
