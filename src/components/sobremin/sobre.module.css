@@ -291,7 +291,7 @@
 
    .boxQuem .boxImagem{
 
-      background-color: red;
+      
 
 
      & .back {
@@ -302,8 +302,11 @@
         background-image: url(../../../public/des.jpg);
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
-
+        background-size: cover
+        background-color: transparent;
+        
+       
+        
 
         & .front{
 
