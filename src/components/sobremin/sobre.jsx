@@ -15,7 +15,7 @@ export default function Sobre() {
 
             <section className={estiloSobre.boxImagem}>
 
-
+                {/* imagem com background image url */}
 
             </section>
 
@@ -26,6 +26,7 @@ export default function Sobre() {
                 <div className={estiloSobre.define}>
 
                     <Image className={estiloSobre.imgEmoji} alt='imagem de um programador e seu computador' src={emo}/>
+                    
                     <p>Olá, me hamo Ramon , sou Desenvolvedor Web e vou te ajudar a com estratégias visuais a aprimorar sua imagem e seu alcançe profisioinal , transformando ideias em realidade com atendimento personalizado e consultoria vitalícia</p>
 
                 </div>
