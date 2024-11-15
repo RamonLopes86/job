@@ -11,7 +11,7 @@ export default function Ajuda() {
 
     return (
 
-        <section className={estiloAjuda.boxAjuda}>
+        <section id='idajuda' className={estiloAjuda.boxAjuda}>
 
             <h1>Como um Projeto Personalziado  pode trazer beneficios ao seu negócio</h1>
 

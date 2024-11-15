@@ -11,7 +11,7 @@ export default function Quem(){
 
     return(
 
-        <section className={estiloQuem.boxPaiQuem}>
+        <section id='idquem' className={estiloQuem.boxPaiQuem}>
 
 
             <section className={estiloQuem.boxImage}>

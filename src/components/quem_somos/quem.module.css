@@ -405,6 +405,12 @@
         border-bottom: 5px solid var(--corroxo);
         border-right: none;
         left: -20%;
+
+
+        & h1{
+
+            font-size: 2.5rem;
+        }
     }
 
     .boxPaiQuem .boxImage .boxTexto::-webkit-scrollbar{
