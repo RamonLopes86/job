@@ -1,0 +1,238 @@
+.boxAjuda{
+
+   display: grid;
+   grid-template-columns: repeat(1 , 1fr);
+   align-items: center;
+   justify-content: center;
+   align-content: center;
+   justify-items: center;
+   gap: 70px;
+   font-family: var(--popins);
+    background-color: #B9D8EF;
+   min-height: 1000px;
+   padding-bottom: 100px;
+   position: relative;
+
+}
+
+
+.boxAjuda h1{
+
+    padding: 40px 10px;
+    text-transform: uppercase;
+    font-size: 4rem;
+    color: var(--coramaforte);
+    text-align: center;
+    width: 90%;
+    margin: 0px auto;
+}
+
+
+
+.boxAjuda .boxCard{
+
+    
+    display: grid;
+    grid-template-columns: repeat(3 , 280px);
+    gap: 80px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-content: center;
+
+
+}
+   
+
+
+.boxAjuda .boxCard .card{
+
+    width: 280px;
+    min-height: 350px;
+   background-image: linear-gradient( to bottom  , #9190C9 60% , rgba(255, 255, 255, 0.438) );
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    border-radius: 10px;
+   
+}
+    
+  
+
+
+.boxAjuda .boxCard .card > .number{
+
+    width: 80px;
+    height: 80px;
+    background-color: #FCC242;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -30px;
+    left: -40px;
+  
+}
+    
+
+.boxAjuda .boxCard .card > .number p{
+
+        font-size: 3rem;
+        color: white;
+
+        
+}
+
+.boxAjuda .boxCard .card .boxTit{
+
+    width: 100%;
+    padding-top: 30px;
+    min-height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.boxAjuda .boxCard .card .boxTit > h2{
+
+    text-transform: uppercase;
+    font-size: 2.6rem;
+    color: var(--coramaforte);
+    margin-top: 20px;
+    padding: 0px 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  
+
+    & .mais{
+
+        font-size: 4rem;
+        color: white;
+    }
+
+   
+}
+
+.boxAjuda .boxCard .card > p{
+
+    padding-top: 10px;
+   color: rgba(0, 0, 0, 0.842);
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 0px 5px;
+    
+}
+
+
+
+
+@media screen and (max-width:1116px) {
+
+    .boxAjuda .boxCard {
+
+     display: grid;
+    grid-template-columns: repeat(2, 280px);
+    gap: 80px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-content: center;
+    }
+
+
+}
+
+
+@media screen and (max-width:755px) {
+
+    .boxAjuda h1{
+
+        font-size: 2rem;
+       
+
+    }
+
+    .boxAjuda .boxCard {
+
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0px 80px;
+    }
+
+    .boxAjuda .boxCard .card{
+
+        flex: auto;
+    }
+
+
+}
+
+
+@media screen and (max-width:500px) {
+
+    .boxAjuda h1{
+
+       font-size: 2rem;
+      
+    }
+       
+
+
+    .boxAjuda .boxCard .card .number{
+
+        right: 10px;
+        left: auto;
+        top: 10px;
+        width: 50px;
+        height: 50px;
+
+
+        & p{
+
+            font-size: 2rem;
+        }
+
+    }
+
+
+    .boxAjuda .boxCard .card .boxTit h2{
+
+        font-size: 2.6rem;
+    }
+
+
+        
+
+}
+
+
+
+@media screen and (max-width:320px) {
+
+    .boxAjuda h1{
+
+       font-size: 2rem;
+       max-width: 280px;
+       margin: 0px auto;
+       
+     }  
+}
+
+   
+    
+
+
+
