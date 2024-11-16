@@ -89,6 +89,13 @@
         font-weight: 300;
         line-height: 30px;
         padding: 10px 0px;
+       
+
+
+        & span{
+
+            font-weight: 500;
+        }
     }
 
     &>p::first-letter{
@@ -113,6 +120,8 @@
         cursor: pointer;
         border-radius: 8px;
         box-shadow: 3px 4px 8px  rgba(0, 0, 0, 0.623);
+        font-size: 1.3rem;
+        margin-top: 20px;
 
     }
 
@@ -121,5 +130,137 @@
     
 
   
+
+@media screen and (max-width:1240px) {
+
+    .boxConteudo .boxImagem{
+
+        width: 450px;
+        height: 450px;
+        left: -7%;
+        top: -10%;
+    }
+
+
+    .boxConteudo .texto{
+
+        right: -3%;
+    }
+
+
+}
+
+
+
+
+@media screen and (max-width:1045px) {
+
+    .boxPai{
+
+        min-height: 1300px;
+    }
+
+    .boxPai .boxFlex{
+
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding: 0px 20px;
+    }
+
+    .boxPai .boxFlex .boxConteudo{
+
+        min-height: 850px;
+        
+        
+    }
+
+    .boxConteudo .boxImagem{
+
+        width: 450px;
+        height: 450px;
+        left: 50%;
+        transform: translate(-50%);
+        top: -20%;
+        
+    }
+
+
+    .boxConteudo .texto{
+     
+
+        position: static;
+        margin-top: 300px;
+        width: 80%;
+
+
+        & >h1::after{
+
+            content: '';
+            display: block;
+            width:60%;
+            transition: all 800ms ;
+            border-bottom: 4px solid var(--corroxo);
+        }
+
+
+        & button{
+
+           position: static;
+           width: 100%;
+
+        }
+    }
+
+
+
+
+
+}
+
+
+@media screen and (max-width:502px) {
+
+    .boxPai .boxFlex .boxConteudo{
+
+        border-radius: 50px 50px 10px 10px;
+        position: relative;
+        
+    }
+
+    .boxPai .boxFlex .texto{
+
+        margin-top: 170px;
+
+        & h1{
+
+            font-size: 10vw;
+        }
+
+        & p{
+
+            font-size: 1rem;
+            text-align: center;
+        }
+    }
+
+    .boxPai .boxFlex .boxImagem{
+
+        width: 80%;
+       
+        background-size: contain;
+        position: absolute;
+        
+
+        
+    }
+
+}
+
+
+
+
+
+
 
 

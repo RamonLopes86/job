@@ -25,7 +25,7 @@ export default function Apresentacao(){
                         <div className={estiloApre.texto}>
 
                             <h1>Ramon Lopes</h1>
-                            <p>Olá , me chamo Ramon Lopes sou Desenvolvedor / Programador ,  CEO da Lopfy e vou juntos vamos transfromar suas ideias em realidade , com estratégias visuais criativas para aprimorar a imagem e o crescimento do seu empreendimento </p>
+                            <p>Sou Desenvolvedor / Programador ,  CEO da <span>Lopfy</span> e vou juntos vamos transfromar suas ideias em realidade , com estratégias visuais criativas para aprimorar a imagem e o <span>crescimento</span> do seu empreendimento </p>
 
                             <Link href={'#'}> <button>Portifólio</button></Link>
                            
