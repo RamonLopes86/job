@@ -7,14 +7,14 @@ const arrayDados = [
 
 {
 
-    perg:'prazo de entrega',
+    perg:'Prazo de entrega',
     res:'O prazo de entrega variará conforme o tipo de site a ser desenvolvido. Em geral, o decorre entre 7 a 20 dias após o envio das informações necessárias para o projeto.'
 
 },
 
 {
 
-    perg:'pagamento',
+    perg:'Pagamento',
     res:'O prazo de entrega variará conforme o tipo de site a ser desenvolvido. Em geral, o decorre entre 7 a 20 dias após o envio das informações necessárias para o projeto.'
 
 }
