@@ -7,8 +7,10 @@ import Banner from "@/components/banner/banner";
 import Quem from "@/components/quem_somos/quem";
 import Sobre from "@/components/sobremin/sobre";
 import Ajuda from "@/components/ajuda/ajuda";
+import Duvidas from "@/components/duvidas/duvidas";
 
 import React , {useEffect, useState} from "react";
+
 
 
 export default function Home() {
@@ -78,6 +80,8 @@ export default function Home() {
       <Sobre/>
 
       <Ajuda/>
+
+      <Duvidas/>
 
 
 

@@ -1,0 +1,76 @@
+.boxPai{
+
+ min-height: 900px;
+ position: relative;
+ font-family: var(--popins);
+ background-image: linear-gradient(to left , #908FC9 40% , rgba(248, 246, 246, 0.5));
+
+
+ & > h1{
+
+    text-align: center;
+    padding: 40px 10px;
+    text-transform: uppercase;
+    font-size: 3rem;
+ }
+
+}
+
+.boxPai > .boxPerguntas{
+
+    max-width: 1300px;
+    margin: 0px auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0px 20px;
+
+    &  h1{
+
+        font-size: 2rem;
+    }
+
+}
+
+.boxPai .boxPerguntas .perguntas{
+
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+
+    & p{
+
+        font-size: 1.4rem;
+    }
+   
+}
+
+.boxPai .boxPerguntas .animaOn{
+
+    height: 200px;
+    transition: all 400ms;
+}
+
+.boxPai .boxPerguntas .animaOff{
+
+    height: 50px;
+    transition: all 400ms;
+}
+   
+
+
+
+
+
+
+
+
+
+
+
+ 
+   
+    
