@@ -27,7 +27,7 @@ export default function Apresentacao(){
                             <h1>Ramon Lopes</h1>
                             <p>Sou Desenvolvedor / Programador ,  CEO da <span>Lopfy</span> e vou juntos vamos transfromar suas ideias em realidade , com estratégias visuais criativas para aprimorar a imagem e o <span>crescimento</span> do seu empreendimento </p>
 
-                            <Link href={'#'}> <button>Portifólio</button></Link>
+                            <Link target='_Blank' href={'https://ramon-portifolio.vercel.app/'}> <button>Portifólio</button></Link>
                            
 
                         </div>

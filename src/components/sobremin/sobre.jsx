@@ -28,7 +28,7 @@ export default function Sobre() {
 
     return (
 
-        <section className={estiloSobre.boxQuem}>
+        <section id='idsobre' className={estiloSobre.boxQuem}>
 
 
             <section className={estiloSobre.boxImagem}>

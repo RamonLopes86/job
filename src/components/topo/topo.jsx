@@ -15,11 +15,11 @@ export default function Topo(props){
 
     return(
 
-        <section className={estiloTopo.boxTopo}>
+        <section id='idtopo' className={estiloTopo.boxTopo}>
 
             <FontAwesomeIcon onClick={() => props.click('abrir')} className={estiloTopo.menuHam} icon={faBars}/>
 
-            <div className={estiloTopo.marca}>
+            <div  className={estiloTopo.marca}>
                 <p>L</p>
                 <p>opfy</p>
                 
@@ -28,12 +28,12 @@ export default function Topo(props){
             <nav className={estiloTopo.navPrincipal}>
 
                 <ul>
-                    <Link href={'#'} className={estiloTopo.linkTopo}><li>Sobre</li></Link>
+                    <Link href={'#idsobre'} className={estiloTopo.linkTopo}><li>Sobre</li></Link>
                     <Link href={'#idquem'} className={estiloTopo.linkTopo}> <li>Quem Somos</li></Link>
                     <Link href={'#'} className={estiloTopo.linkTopo}> <li>Modelos</li></Link>
                     <Link href={'#'} className={estiloTopo.linkTopo}><li>Negócio</li></Link>
                     <Link href={'#idajuda'} className={estiloTopo.linkTopo}> <li>Vantagens</li></Link>
-                    <Link href={'#'} className={estiloTopo.linkTopo}><li>Perguntas</li></Link>
+                    <Link href={'#idperguntas'} className={estiloTopo.linkTopo}><li>Perguntas</li></Link>
                    
                 </ul>
 

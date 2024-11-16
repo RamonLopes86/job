@@ -105,7 +105,7 @@ export default function Duvidas() {
 
     return (
 
-        <section className={estiloAjuda.boxPai}>
+        <section id='idperguntas' className={estiloAjuda.boxPai}>
 
             <h1>Perguntas Comuns</h1>
 

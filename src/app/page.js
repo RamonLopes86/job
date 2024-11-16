@@ -9,88 +9,110 @@ import Sobre from "@/components/sobremin/sobre";
 import Ajuda from "@/components/ajuda/ajuda";
 import Duvidas from "@/components/duvidas/duvidas";
 import Apresentacao from "@/components/apresentacao/apresentacao";
+import Link from "next/link";
 
-import React , {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
+
 
 
 
 export default function Home() {
 
-  const [animNav , setAnimaNav] = useState(styles.animaNavOff)
+  const [animNav, setAnimaNav] = useState(styles.animaNavOff)
 
- 
-  function openNav(param){
 
-     if(param === 'abrir'){
+  function openNav(param) {
 
-        setAnimaNav(styles.animaNavOn)
+    if (param === 'abrir') {
 
-     }else if(param === 'fechar'){
+      setAnimaNav(styles.animaNavOn)
 
-        setAnimaNav(styles.animaNavOff)
-      
-     }
+    } else if (param === 'fechar') {
 
+      setAnimaNav(styles.animaNavOff)
+
+    }
+
+  }
+
+
+
+  function recolherMenu() {
+
+    setAnimaNav(styles.animaNavOff)
 
   }
 
 
 
 
-  useEffect(()=>{
+
+  useEffect(() => {
 
 
-    window.addEventListener('resize' , ()=> {
+    window.addEventListener('resize', () => {
 
-      if(window.innerWidth >= 990 ){
+      if (window.innerWidth >= 990) {
 
         setAnimaNav(styles.animaNavOff)
-  
+
       }
-      
+
 
     })
 
 
-    
 
 
-  },[])
+
+  }, [])
 
 
 
 
 
   return (
-    
+
     <div className={styles.conteudo}>
 
       <Topo
-      
-      click = {openNav}
-      
+
+        click={openNav}
+
       />
       <Banner
 
-        anima ={animNav}
+        anima={animNav}
         click={openNav}
-      
+        recolher={recolherMenu}
+
       />
-      <Quem/>
+      <Quem />
 
-      <Sobre/>
+      <Sobre />
+
+
+      <Ajuda />
+
+
+
+      <Duvidas />
+
+      <Apresentacao />
+
+
+
+      <Link className={styles.linkTopo} href={'#idtopo'}> 
       
+       
 
-      <Ajuda/>
-
-     
-
-      <Duvidas/>
-
-      <Apresentacao/>
-
-   
-
+        <FontAwesomeIcon className={styles.iconTop} icon={faChevronUp} />
+        <p>TOPO</p>
+      
+      
+      </Link>
 
 
     </div>
