@@ -33,13 +33,14 @@
    
     
 
-    &  h1{
+    &  section h1{
 
         font-size: 2rem;
         text-transform: uppercase;
         color: white;
         font-weight: 400;
         cursor: pointer;
+        
        
     }
 
@@ -49,9 +50,6 @@
 
     overflow: hidden;
    
-    
-
-
 
     & p{
 
@@ -67,7 +65,7 @@
     height: 150px;
     transition: all 400ms;
   border-bottom: 2px solid white;
-    
+
 }
 
 
@@ -84,9 +82,11 @@
 
 @media screen and (max-width:1000px) {
 
-    .boxPai .boxPerguntas > h1 {
+    .boxPai .boxPerguntas section > h1 {
 
         font-size: 1.8rem;
+        
+       
     }
 
     .boxPai .boxPerguntas .animaOn{
@@ -108,7 +108,7 @@
         
     }
 
-    .boxPai .boxPerguntas > h1 {
+    .boxPai .boxPerguntas section > h1 {
 
         font-size:5vw
     }
