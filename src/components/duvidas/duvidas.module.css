@@ -1,10 +1,14 @@
 .boxPai{
 
- min-height: 900px;
+
  position: relative;
  font-family: var(--popins);
  background-image: linear-gradient(to left , #908FC9 40% , rgba(248, 246, 246, 0.5));
-
+width: 100%;
+display: grid;
+grid-template-columns: repeat(1 , 1fr);
+align-items: center;
+justify-content: center;
 
  & > h1{
 

@@ -17,6 +17,23 @@ const arrayDados = [
     perg:'Pagamento',
     res:'O prazo de entrega variará conforme o tipo de site a ser desenvolvido. Em geral, o decorre entre 7 a 20 dias após o envio das informações necessárias para o projeto.'
 
+},{
+
+    perg:'Dominio e Hospedagem ?',
+    res:'"Na verdade, esses serviços são responsabilidade do cliente. Estou aqui para ajudar com dúvidas e na escolha, mas a hospedagem e o domínio não estão incluídos no orçamento do site."'   
+
+},
+{
+
+    perg:'Custos Adicionais ?',
+    res:'Você paga apenas pelo desenvolvimento do projeto. Os únicos custos adicionais serão com o domínio e a hospedagem do site, que deverão ser pagos diretamente ao provedor.'   
+
+},
+{
+
+    perg:'O projeto é adaptável a qualquer tela ?',
+    res:'SIM. A página é projetada para se adaptar a qualquer tela.'   
+
 }
 
 

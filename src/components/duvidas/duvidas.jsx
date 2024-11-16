@@ -26,27 +26,44 @@ export default function Duvidas(){
 
     function clikPergunta(index){
 
-        setAnimacoes( 
+        
+        // caso tenha duvidas , voce fazer as duas formas , lembrndo que a primeira é a melhor 
 
-                prevAnima=>{
+        // OPÇÃO 1 
 
-                    const novo = [...prevAnima]
+        //  AQUI VOCE FARÁ UM MAP DENTRO DOS ESTILOS ATUAIS E ATRAVEZ DO INDEX DURANTE O EVENTO CLICK ELE VAI ARTRIBUIR O ESTILO DE ACORDO COM  O INDEX SELECIONADO NO CLICK
 
-                    novo[index] = novo[index] === estiloAjuda.animaOff ? estiloAjuda.animaOn : estiloAjuda.animaOff
 
-                    return novo
-                }
+        setAnimacoes(
 
-            // prevAnima =>{
+            animacoes => (animacoes.map((estiloAtual , indice)=>{
 
-            //     const novaAnima = [...prevAnima]
+                return indice === index ? (estiloAtual === estiloAjuda.animaOff ? estiloAjuda.animaOn : estiloAjuda.animaOff) : estiloAtual
 
-            //     novaAnima[index] = cond ? estiloAjuda.animaOn : estiloAjuda.animaOff
-
-            //     return novaAnima
-            // }
+            }))
 
         )
+
+
+        // OPÇÃO 2 
+
+        // AQUI VOCE VAI COLOCAR OS ESTILOS ATUAIS NO SPRED E AVALIA-LO JUSNTO AO INDEX , VEJA :
+
+
+            // setAnimacoes(
+
+            //     animacoes => {
+
+            //             const arrayAnimacoes = [...animacoes]
+
+            //         arrayAnimacoes[index] = arrayAnimacoes[index] === estiloAjuda.animaOff ? estiloAjuda.animaOn : estiloAjuda.animaOff
+
+            //         return arrayAnimacoes
+
+
+            //     })
+
+
 
     }
      
