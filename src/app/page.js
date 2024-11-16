@@ -8,6 +8,7 @@ import Quem from "@/components/quem_somos/quem";
 import Sobre from "@/components/sobremin/sobre";
 import Ajuda from "@/components/ajuda/ajuda";
 import Duvidas from "@/components/duvidas/duvidas";
+import Apresentacao from "@/components/apresentacao/apresentacao";
 
 import React , {useEffect, useState} from "react";
 
@@ -78,10 +79,17 @@ export default function Home() {
       <Quem/>
 
       <Sobre/>
+      
 
       <Ajuda/>
 
+     
+
       <Duvidas/>
+
+      <Apresentacao/>
+
+   
 
 
 

@@ -1,0 +1,125 @@
+.boxPai {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 1000px;
+    background-color: var(--coramarelo);
+    font-family: var(--popins);
+
+}
+
+
+.boxPai .boxFlex .boxConteudo{
+
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 900px;;
+    min-height: 650px;
+    margin: 0px auto;
+    position: relative;
+    border-radius: 10px;
+}
+
+.boxImagem {
+
+    width: 550px;
+    height: 550px;
+  
+    clip-path: circle();
+    object-fit: cover;
+    position: absolute;
+    left: -15%;
+    top: -5%;
+
+
+    background-image: url(../../../public/ramon1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+.boxConteudo .texto {
+
+       
+        width: fit-content;
+        position: absolute;
+        width: 500px;
+        right: -150px;
+        top: 20%;
+        text-align: center;
+
+       
+        
+
+    &>h1{
+
+        font-size: 3rem;
+        width: 100%;
+        padding: 10px 0px;
+        text-transform: uppercase;
+        font-weight: 200;
+        text-align: left;
+    }
+
+    & >h1::after{
+
+        content: '';
+        display: block;
+        width:100%;
+        transition: all 800ms ;
+        border-bottom: 4px solid var(--corroxo);
+    }
+       
+
+    &> p{
+
+        line-height: 25px;
+        font-size: 1.3rem;
+        letter-spacing: 2px;
+        text-align: left;
+        font-weight: 300;
+        line-height: 30px;
+        padding: 10px 0px;
+    }
+
+    &>p::first-letter{
+
+        font-size: 3rem;
+        color: var(--corroxo);
+        font-weight: bolder;
+
+    }
+
+
+    & button{
+
+        width: 200px;
+        border: none;
+        padding: 20px;
+        background-color: var(--corroxo);
+        position: absolute;
+        left: 0;
+        text-transform: uppercase;
+        color: white;
+        cursor: pointer;
+        border-radius: 8px;
+        box-shadow: 3px 4px 8px  rgba(0, 0, 0, 0.623);
+
+    }
+
+}
+    
+    
+
+  
+
+

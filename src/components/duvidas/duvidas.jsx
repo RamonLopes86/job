@@ -3,14 +3,13 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import estiloAjuda from './duvidas.module.css';
 import React, { useState } from 'react';
-import { faPlus } from '@fortawesome/free-solid-svg-icons';
+import {faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
 import arrayDados from '@/dados/array';
 
 
 export default function Duvidas() {
 
 
-    // const [cond , setCond] = useState(true)
     const [animacoes, setAnimacoes] = useState(
 
         arrayDados.map(() => {
@@ -18,10 +17,26 @@ export default function Duvidas() {
             return (
 
                 estiloAjuda.animaOff
+               
             )
         })
 
     )
+
+
+    
+    const [icone , setIcone] = useState(arrayDados.map(()=>{
+
+
+            return(
+
+                faPlus
+            )
+
+    }))
+
+   
+
 
 
     function clikPergunta(index) {
@@ -43,6 +58,19 @@ export default function Duvidas() {
             }))
 
         )
+
+
+        setIcone ( iconeAnterior => iconeAnterior.map((icones , indice)=>{
+
+            return indice === index ? (icones === faPlus ? faMinus : faPlus) : icones
+
+        }))
+
+
+
+
+
+        
 
 
         // OPÇÃO 2 
@@ -90,15 +118,18 @@ export default function Duvidas() {
                     arrayDados.map((info, index) => {
 
                         return (
-                            <>
+                        
 
-                                <h1 onClick={() => clikPergunta(index)} > <FontAwesomeIcon icon={faPlus} /> {info.perg}</h1>
-                                <div key={index} className={`${estiloAjuda.perguntas} ${animacoes[index]}`} >
+                                <section key={index}>
 
-                                    <p>{info.res}</p>
-                                </div>
+                                    <h1 onClick={() => clikPergunta(index)} > <FontAwesomeIcon icon={icone[index]} /> {info.perg}</h1>
+                                    <div  className={`${estiloAjuda.perguntas} ${animacoes[index]}`} >
+                                        <p>{info.res}</p>
+                                    </div>
+                                    
+                                </section>
 
-                            </>
+                           
                         )
                     })
                 }
