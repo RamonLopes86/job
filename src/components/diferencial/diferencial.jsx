@@ -18,7 +18,7 @@ export default function Diferencial() {
 
     return (
 
-        <section className={estiloDif.boxPai}>
+        <section id='idnegocio' className={estiloDif.boxPai}>
 
             <h1>por que a Lopfy?</h1>
 
