@@ -8,7 +8,7 @@
 .boxPai h1{
 
     text-align: center;
-    padding: 40px 10px;
+    padding:40px 10px 0px 10px;
     text-transform: uppercase;
     font-size: 4rem;
    color: var(--corroxo);
@@ -20,18 +20,32 @@
 .boxPai .boxCards{
 
     display: grid;
-    grid-template-columns: repeat(auto-fit , minmax(250px , 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(auto-fit , minmax(270px , 1fr));
+    gap: 30px;
     align-items: center;
     justify-content: center;
     justify-items: center;
-    padding: 0px 10px;
-    max-width: 1024px;
+    padding: 80px 20px;
+    max-width: 1300px;
     margin: 0px auto;
 
 
+    & h2{
+
+        text-transform: uppercase;
+        color:rgba(0, 0, 0, 0.856);
+    }
+
+    & p{
+
+        text-align: center;
+        color: black;
+        font-weight: 500;
+    }
 
 }
+
+
   
 
 
@@ -39,14 +53,132 @@
 
     
     min-height: 400px;
-    background-color: gray;
+    
     padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    background-color: white;
+    border-radius: 90px 10px 90px 10px;
+    
+    /* border-bottom: solid rgba(29, 28, 28, 0.24);
+    border-left: solid rgba(29, 28, 28, 0.24); */
+
+    box-shadow: 0px 0px 5px rgba(131,131,131,0.075) , 0px 0px 20px rgba(131, 131, 131, 0.705);
+    & .icon{
+
+        width: 90px;
+        height: 90px;
+    }
 
 }
 
 
 
+
+
+
+
+.boxPai .boxCards .card:nth-of-type(1) {
+
+    border-top: 20px solid var(--corroxo);
+    border-bottom: 20px solid var(--corroxo);
+
+
+    & .icon{
+
+        background-color: var(--corroxo);
+        clip-path: circle();
+        padding: 10px;
+
+        animation-name: moveIcon;
+        animation-duration: 600ms;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        
+    }
+}
+
+
+.boxPai .boxCards .card:nth-of-type(2) {
+
+    border-top: 20px solid #2CBECC;
+    border-bottom: 20px solid #2CBECC;
+
+
+    & .icon{
+
+        background-color:#2CBECC;
+        clip-path: circle();
+        padding: 10px;
+
+        animation-name: moveIcon;
+        animation-duration: 600ms;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        
+    }
+}
+
+.boxPai .boxCards .card:nth-of-type(3) {
+
+    border-top: 20px solid #F1C50E;
+    border-bottom: 20px solid #f1c50e;
+
+    & .icon{
+
+        background-color:#F1C50E;
+        clip-path: circle();
+        padding: 10px;
+
+        animation-name: moveIcon;
+        animation-duration: 600ms;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        
+    }
+}
+
+
+.boxPai .boxCards .card:nth-of-type(4) {
+
+    border-top: 20px solid #E142DC;
+    border-bottom: 20px solid #E142DC;
+
+
+    & .icon{
+
+        background-color:#E142DC;
+        clip-path: circle();
+        padding: 10px;
+
+        animation-name: moveIcon;
+        animation-duration: 600ms;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        
+    }
+}
+    
+    
+    
+
+
+
+
+
+
+
+@keyframes moveIcon {
+
+
+        to{
+
+            transform: rotate(10deg);
+        }
+}

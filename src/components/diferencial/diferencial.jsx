@@ -32,7 +32,7 @@ export default function Diferencial() {
 
                             <div key={info.id} className={estiloDif.card}>
 
-                                <Image alt={info.tit} src={info.image} />
+                                <Image className={estiloDif.icon} alt={info.tit} src={info.image} />
                                 <h2>{info.tit}</h2>
                                 <p>{info.tx}</p>
 
