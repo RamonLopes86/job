@@ -24,6 +24,7 @@
     align-content: center;
     font-family: var(--POPINS);
     cursor: pointer;
+    z-index: 2;
    
 
     & .iconTop{
