@@ -15,7 +15,7 @@ const arrayDados = [
 {
 
     perg:'Pagamento',
-    res:'O prazo de entrega variará conforme o tipo de site a ser desenvolvido. Em geral, o decorre entre 7 a 20 dias após o envio das informações necessárias para o projeto.'
+    res:'Os pagamentos serão feitos 50% no começo do projeto e o restante (50%) na entrega..'
 
 },{
 
