@@ -1,8 +1,8 @@
 
 import estiloDif from './diferencial.module.css';
 import dif from '@/dados/dig';
-import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
+
 
 
 
