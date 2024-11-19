@@ -21,7 +21,7 @@
 
     display: grid;
    
-    grid-template-columns: repeat(2 , 400px);
+    grid-template-columns: repeat(2 , 450px);
     gap: 30px;
     align-items: center;
     justify-content: center;
@@ -178,15 +178,107 @@
     
     
 
-@media screen and (max-width:864px) {
+@media screen and (max-width:1000px) {
 
     .boxPai .boxCards{
 
-        grid-template-columns: repeat(1 , 1fr);
+        grid-template-columns: repeat(2 , minmax(300px , 1fr));
+
+
+        & .card {
+
+            & h2{
+
+                font-size: 2.2rem;
+                padding: 0px 15px;
+            }
+        }
+
+
+        & > .card:nth-last-of-type(4){
+
+            grid-column: 1/span 3;
+            width: 100%;
+            
+            
+        }
+
+        & > .card:nth-last-of-type(1){
+
+            grid-column: 1/span 3;
+            width: 100%;
+           
+        }
+
+
+        & > .card:nth-last-of-type(2){
+
+            grid-column: 1/2;
+            grid-row: 2/3;
+            height: 100%;
+            width: 100%;
+
+        }
+            
+
+           
+
+        & > .card:nth-last-of-type(3){
+
+            grid-column: 2/4;
+            grid-row: 2 /3;
+            height: 100%;
+            width: 100%;
+            
+            
+           
+        }
+
     }
 
 }
 
+
+
+
+@media screen and (max-width:700px) {
+
+
+    .boxPai .boxCards{
+
+        grid-template-columns: repeat(1 , 1fr);
+
+
+
+        & > .card:nth-last-of-type(2){
+
+            grid-column: 1/4;
+            grid-row: 2/ span 3;
+            height: 100%;
+            width: 100%;
+            
+        }
+    
+           
+    
+        & > .card:nth-last-of-type(3){
+    
+            grid-column: 1/4;
+            grid-row: 5 / span 3;
+            height: 100%;
+            width: 100%;
+           
+        }
+    
+
+
+
+    }
+
+  
+        
+
+}
 
 
 @media screen and (max-width:321px) {
@@ -199,6 +291,12 @@
     .boxPai .boxCards {
 
        grid-template-columns: repeat( 1 , minmax(100px , 1fr));
+
+
+       & .card h2{
+
+        font-size: 10vw;
+       }
        
     }
 
