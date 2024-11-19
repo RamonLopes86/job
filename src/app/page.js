@@ -9,6 +9,7 @@ import Sobre from "@/components/sobremin/sobre";
 import Ajuda from "@/components/ajuda/ajuda";
 import Duvidas from "@/components/duvidas/duvidas";
 import Apresentacao from "@/components/apresentacao/apresentacao";
+import Diferencial from "@/components/diferencial/diferencial";
 import Link from "next/link";
 
 import React, { useEffect, useState } from "react";
@@ -102,7 +103,7 @@ export default function Home() {
 
       <Apresentacao />
 
-
+      <Diferencial/>
 
       <Link className={styles.linkTopo} href={'#idtopo'}> 
       
