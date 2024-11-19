@@ -32,6 +32,10 @@
    width: 50%;
    position: relative;
 
+   animation-name: moveImg;
+   animation-duration: 1s;
+   animation-timing-function: linear;
+
 
    & .nuvem{
 
@@ -109,6 +113,10 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+
+    animation-name: moveTx;
+    animation-duration: 1s;
+    animation-timing-function: linear;
     
 
     & mark{
@@ -392,7 +400,38 @@
 
 
 
-        
+      
+/* intersections animation */
+
+
+.txOn{
+
+    transform: translate(0);
+    transition: 1s all;
+    transition-delay: 200ms;
+
+}
+
+.txOff{
+
+    transform: translate(-50vw);
+   
+}
+
+
+.imgOn{
+
+    transform: scale(1);
+    transition:all 1s;
+    transition-delay: 500ms;
+
+}
+
+.imgOff{
+
+    transform: scale(0);
+
+}
 
 
 
@@ -490,5 +529,45 @@
 
 
     }      
-   
+  
+    
+@keyframes moveTx {
+
+    from {
+
+        transform: translate(-50vw);
+       
+    }
+
+    to{
+
+        transform: translate(0);
+        transition: all 1s;
+        transition-timing-function: linear;
+
+    }
+
+}
+
+
+@keyframes moveImg {
+
+
+    from {
+
+        transform: translate(50vw);
+       
+    }
+
+    to{
+
+        transform: translate(0);
+        transition: all 1s;
+        transition-timing-function: linear;
+
+    }
+
+
+
+}
 

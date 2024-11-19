@@ -9,11 +9,7 @@ import wpp from '../../../public/whats.png'
 import banner3 from '../../../public/banner2.jpg'
 import nuvem from '../../../public/nuvem.jpg'
 import foguete from '../../../public/foguete2.jpg'
-
-
-
-
-
+import React , {useState  , useEffect} from 'react';
 
 
 
@@ -21,7 +17,46 @@ import foguete from '../../../public/foguete2.jpg'
 
 export default function Banner(props) {
 
-  
+    const [tx , setTx] = useState(estilobanner.txOn)
+    const [bxImg , setBxImg] = useState(estilobanner.imgOn) 
+
+
+
+    
+function animaTx(){
+
+    if(window.scrollY > 1100){
+
+        setTx(estilobanner.txOff)
+        setBxImg(estilobanner.imgOff)
+      
+    }else if(window.scrollY < 1000){
+
+        setTx(estilobanner.txOn)
+        setBxImg(estilobanner.imgOn)
+    }
+
+}
+
+
+
+   
+
+
+
+useEffect(()=>{
+
+   window.addEventListener('scroll' , animaTx) 
+
+   
+   return () =>{
+
+       
+        window.removeEventListener('scroll' , animaTx)
+   }
+
+},[])
+
 
 
     return (
@@ -29,12 +64,12 @@ export default function Banner(props) {
 
         <section className={estilobanner.boxBanner}>
 
-            <section className={estilobanner.boxTexto}>
+            <section className={`${estilobanner.boxTexto} ${tx}`}>
                 <h1>Conquiste uma <mark>visibilidade</mark> digital marcante para seu <mark>negócio</mark></h1>
                 <p>Profissional dedicado à criação de sites personalizados, seguros e elaborados para atrair um maior número de clientes e obter resultados eficazes.</p>
                 <button>Vamos conversar ? <Image alt='icone do whats app' className={estilobanner.imgWpp} src={wpp} /> </button>
             </section>
-            <section className={estilobanner.boxImagem}>
+            <section className={`${estilobanner.boxImagem} ${bxImg}`}  >
                 <Image className={estilobanner.image} alt='image' src={banner3} />
                 <Image alt='imagens de nuvens' className={`${estilobanner.imgNuvem} ${estilobanner.nuvem}`} src={nuvem} />
                 <Image alt='imagens de nuvens' className={`${estilobanner.imgNuvem1} ${estilobanner.nuvem}`} src={nuvem} />
