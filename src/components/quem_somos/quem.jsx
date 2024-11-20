@@ -3,11 +3,278 @@ import estiloQuem from './quem.module.css';
 import dev from '../../../public/dev.jpg'
 import wpp from '../../../public/whats.png'
 
+import React , {useState , useEffect , useRef} from 'react';
+
 
 
 
 
 export default function Quem(){
+
+    
+
+    const [animaImg , setAnimaImg] = useState(estiloQuem.imgOff)
+
+    const [blocoAnima , setBlocoAnima] = useState(estiloQuem.blOff)
+
+    const [anima , setAnima] = useState(Array.from({length:3} , (_,index)=> index = estiloQuem.blMenorOff1))
+
+    const imgRef = useRef()
+    const blRef = useRef()
+
+
+
+    const divRef = useRef([])
+
+    
+
+
+    useEffect(()=>{
+
+        const myObserver = new IntersectionObserver((elemento)=>{
+
+                elemento.forEach((info)=>{
+
+                    
+
+                    if(info.isIntersecting){
+
+                    
+                        if(info.target === imgRef.current){
+
+                            setAnimaImg(estiloQuem.imgOn)
+
+                        
+
+                        }
+
+                        if(info.target === blRef.current){
+
+                            setBlocoAnima(estiloQuem.blOn)
+                        }
+
+
+                        if(info.target === divRef.current[0]){
+
+                            setAnima(
+
+                               anima =>{
+
+                                const novo = [...anima]
+
+                                novo[0] = novo[0] === estiloQuem.blMenorOff1 ? estiloQuem.blMenorOn : estiloQuem.blMenorOff1
+
+
+                                return novo
+
+                               }
+
+                            )
+
+                        }
+
+                        if(info.target === divRef.current[1]){
+
+
+                          setAnima(
+
+                            anima =>{
+
+                                const sNovo = [...anima]
+
+
+                                sNovo[1] = sNovo[1] === estiloQuem.blMenorOff1 ? estiloQuem.blMenorOn : estiloQuem.blMenorOff1
+
+                                return sNovo
+
+                            }
+
+                          )
+
+                        }
+
+
+                        if(info.target === divRef.current[2]){
+
+
+                            setAnima(
+  
+                              anima =>{
+  
+                                  const div2 = [...anima]
+  
+  
+                                  div2[2] = div2[2] === estiloQuem.blMenorOff1 ? estiloQuem.blMenorOn : estiloQuem.blMenorOff1
+  
+                                  return div2
+  
+                              }
+  
+                            )
+  
+                          }
+
+                       
+                       
+
+
+                    }else{
+
+                        if(info.target === imgRef.current){
+
+                            setAnimaImg(estiloQuem.imgOff)
+
+                        }
+
+                        if(info.target === blRef.current){
+
+                            setBlocoAnima(estiloQuem.blOff)
+                        }
+                        
+                        
+                        if(info.target === divRef.current[0]){
+
+                           setAnima(
+
+                            anima =>{
+
+                                const novoS = [...anima]
+
+                                novoS[0] = novoS[0] === estiloQuem.blMenorOn ? estiloQuem.blMenorOff1 : estiloQuem.blMenorOn
+
+
+                                return novoS
+
+                               }
+
+                           )
+
+                        }
+
+
+                        if(info.target === divRef.current[1]){
+
+
+                            setAnima(
+  
+                              anima =>{
+  
+                                  const sNovo2 = [...anima]
+  
+  
+                                  sNovo2[1] = sNovo2[1] === estiloQuem.blMenorOn ? estiloQuem.blMenorOff1 : estiloQuem.blMenorOn
+  
+                                  return sNovo2
+  
+                              }
+  
+                            )
+  
+                          }
+
+
+
+                          if(info.target === divRef.current[2]){
+
+
+                            setAnima(
+  
+                              anima =>{
+  
+                                  const Sdiv2 = [...anima]
+  
+  
+                                  Sdiv2[2] = Sdiv2[2] === estiloQuem.blMenorOn ? estiloQuem.blMenorOff1 : estiloQuem.blMenorOn
+  
+                                  return Sdiv2
+  
+                              }
+  
+                            )
+  
+                          }
+
+
+
+                        
+                    }
+
+                })
+
+        })
+
+
+
+        myObserver.observe(imgRef.current)
+        myObserver.observe(blRef.current)
+        
+        divRef.current.map((div)=>
+        
+            {
+
+                return myObserver.observe(div)
+            
+            }
+        
+        )
+
+
+
+        return () => {
+
+            myObserver.unobserve(imgRef.current)
+            myObserver.unobserve(blRef.current)
+
+        }
+
+           
+
+       
+
+
+    },[])
+
+
+    // useEffect(()=>{
+
+    //     const myObserver2 = new IntersectionObserver((e)=>{
+
+    //         e.forEach((info)=>{
+
+
+    //             if(info.isIntersecting){
+
+    //                 console.log(info)
+
+    //             }else{
+
+    //                 console.log('el saiu')
+    //             }
+
+
+
+
+    //         })
+
+    //     })
+
+
+
+
+    //     divRef.current.map((div)=>
+        
+    //             myObserver2.observe(div)
+
+    //     )
+
+        
+
+
+    // },[])
+
+
+
+
 
     return(
 
@@ -16,9 +283,9 @@ export default function Quem(){
 
             <section className={estiloQuem.boxImage}>
 
-                <Image className={estiloQuem.imgDev} alt='imagem do desenvolvedor' src={dev}  />
+                <Image ref={imgRef} className={`${estiloQuem.imgDev} ${animaImg}`} alt='imagem do desenvolvedor' src={dev}  />
 
-                <div className={estiloQuem.boxTexto}>
+                <div ref={blRef} className={`${estiloQuem.boxTexto} ${blocoAnima}`}>
 
                     <h1>O que construimos?</h1>
                     <p>Um site é muito mais do que uma página comum na internet ,ele representa a entrada principal para o seu negócio, funcionando como uma vitrine que exibe seus produtos ou serviços.</p>
@@ -30,7 +297,7 @@ export default function Quem(){
                             <h2>Landing Page</h2>
                             <p>Todo o conteúdo em uma única página, o que permite fluidez e facilidade ao consumir o conteúdo da página.</p>
                         </div>
-                        <div>
+                        <div >
                                 <h2> Sites institucionais</h2>
                                 <p>Para empresas que buscam se destacar da concorrência e conquistar uma forte presença digital por meio de uma página personalizada de alto impacto.</p>
                         </div>
@@ -54,15 +321,15 @@ export default function Quem(){
 
                     <div className={estiloQuem.boxBlocosEscondTx}>
 
-                        <div>
+                        <div className={anima[0]}      ref={(el)=> divRef.current[0] = el } >
                             <h2>Landing Page</h2>
                             <p>Todo o conteúdo em uma única página, o que permite fluidez e facilidade ao consumir o conteúdo da página.</p>
                         </div>
-                        <div>
+                        <div className={anima[1]}  ref={(el)=>(divRef.current[1])= el} >
                                 <h2> Sites institucionais</h2>
                                 <p>Para empresas que buscam se destacar da concorrência e conquistar uma forte presença digital por meio de uma página personalizada de alto impacto.</p>
                         </div>
-                        <div>
+                        <div className={anima[2]}  ref={(el)=>(divRef.current[2])= el} >
                             <h2>Loja virtual</h2>
                             <p>Dê aos seus clientes a liberdade de adquirir seus produtos de qualquer lugar e a qualquer hora do dia!</p>
                         </div>

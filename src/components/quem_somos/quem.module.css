@@ -9,6 +9,7 @@
     align-items: center;
     justify-content: center;
     padding-left: 150px;
+    overflow: hidden;
     
 
 }
@@ -22,7 +23,7 @@
     padding: 100px 30px;
     position: relative;
     margin-top: 50px;
-
+    
 
 }
     
@@ -39,6 +40,7 @@
     border-radius: 50%;
     right: 0%;
     bottom: 10%;
+    
 }
 
 .boxPaiQuem .boxImage .imgDev{
@@ -49,6 +51,7 @@
     border-radius: 50%;
     position: relative;
     left: 100px;
+    
 }
 
 
@@ -70,7 +73,7 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
-
+    
 
 
    & h1{
@@ -376,6 +379,68 @@
 
     
 }
+
+
+
+/* intersection animations */
+
+.imgOn{
+
+    transform: translateX(0);
+    transition: all 2s;
+    /* transition-timing-function: linear; */
+    transition-delay: 300ms;
+    opacity: 1;
+    filter: blur(0);
+}
+
+.imgOff{
+
+    transform: translateX(350px);
+    transition: none;
+    opacity: 0;
+    filter: blur(2px);
+    
+}
+
+.blOn{
+
+    transform: translateY(0);
+    transition: all 1.8s;
+    transition-delay: 1.2s;
+}
+
+.blOff{
+
+    transform: translateY(-350px);
+    opacity: 0;
+    transition: none;
+
+}
+
+.blMenorOn{
+
+    transition: all 2s;
+    transform: translate(0);
+    opacity: 1;
+
+}
+
+.blMenorOff1{
+
+    transform: translateX(-150px);
+    transition: none;
+    opacity: 0;
+}
+
+.blMenorOff2{
+
+    transform: translateX(150px);
+    transition: none;
+    opacity: 0;
+
+}
+
 
 
 
