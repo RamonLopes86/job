@@ -203,19 +203,19 @@ export default function Sobre() {
 
                 if(el.isIntersecting){
 
-                    // frontRef.current.classList.add(estiloSobre.frontOn);
-                    // frontRef.current.classList.remove(estiloSobre.frontOff)
+                    frontRef.current.classList.add(estiloSobre.frontOn);
+                    frontRef.current.classList.remove(estiloSobre.frontOff)
 
 
-                    frontRef.current.classList.toggle(estiloSobre.frontOn);
+                   
 
                 }else{
 
-                    // frontRef.current.classList.add(estiloSobre.frontOff);
-                    // frontRef.current.classList.remove(estiloSobre.frontOn);
+                    frontRef.current.classList.add(estiloSobre.frontOff);
+                    frontRef.current.classList.remove(estiloSobre.frontOn);
 
 
-                    frontRef.current.classList.toglle(estiloSobre.frontOff);
+                   
                 
                 }
 

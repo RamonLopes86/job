@@ -291,7 +291,7 @@
 
 .animaOff{
 
-   transform: translateX(350px);
+   transform: translateX(150px);
    opacity: 0;
    transition: none;
    filter: blur(3px);
@@ -402,15 +402,18 @@
 .boxQuem .boxTexto{
 
    display: grid;
-   grid-template-columns: repeat(auto-fill , minmax(400px , 1fr));
+   grid-template-columns: repeat(auto-fit , minmax(400px , 1fr));
    align-items: center;
+   justify-content: center;
+   align-content: center;
    align-content: center;
    justify-items: center;
    overflow: hidden;
    gap: 20px;
    
-
 }
+   
+
 
 .boxQuem .boxTexto .boxGeral{
 
@@ -450,16 +453,97 @@
 
   .boxQuem .boxTexto > div {
 
-      transition-delay: 0s;
+     transition-delay: 0s;
+   }
+
+   .boxQuem .boxTexto{
+
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+
+      & div{
+
+         height: 100%;
+
+         & .boxEmoji3{
+
+            width: calc(100% - 5px);
+            
+         }
+            
+            
+
+
+         & .imgEmoji{
+
+           object-fit: contain;
+           object-position: center;
+      
+         }
+
+         & .iconQc{
+
+            object-fit: contain;
+            object-position: center;
+         }
+
+      & .imgLinguagem{
+
+         object-fit: contain;
+         object-position: center;
+      }
+
+      }
+      
+      
+   }
+
+  
+      
+
+   
+
+}
+
+
+
+@media screen and (max-width:1000px) {
+
+   .boxQuem .boxTexto{
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2 , 1fr);
+
+
+      
+
    }
 
 }
 
 
 
+@media screen and (max-width:847px) {
+
+      .boxQuem .boxTexto{
+
+         display: grid;
+         grid-template-columns: repeat(2 , 1fr);
+
+         & .boxGeral{
+
+            width: 100%;
+         }
+      }
+
+}
 
 
-@media screen and (max-width:500px) {
+
+@media screen and (max-width:545px) {
 
 
    .boxQuem .boxTexto{
