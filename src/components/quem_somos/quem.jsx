@@ -224,6 +224,17 @@ export default function Quem(){
 
             myObserver.unobserve(imgRef.current)
             myObserver.unobserve(blRef.current)
+            
+
+            divRef.current.map((div)=>
+        
+                {
+    
+                    return myObserver.unobserve(div)
+                
+                }
+            
+            )
 
         }
 
