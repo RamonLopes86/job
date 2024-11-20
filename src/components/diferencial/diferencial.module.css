@@ -176,7 +176,27 @@
 }
     
     
+   
+.animaOff{
+
+    transform: scale(0);
+    filter: blur(10px);
+    opacity:0;
+    transition: all none;
+
+}
+
+.animaOn{
+
     
+    transform: scale(1);
+    filter: blur(0px);
+    opacity: 1;
+    transition: all 1s;
+}
+
+
+
 
 @media screen and (max-width:1000px) {
 

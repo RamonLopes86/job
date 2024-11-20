@@ -10,9 +10,8 @@ import Image from 'next/image';
 
 
 
+
 export default function Diferencial() {
-
-
 
 
 
@@ -26,11 +25,11 @@ export default function Diferencial() {
 
 
                 {
-                    dif.map((info) => {
+                    dif.map((info , index) => {
 
                         return (
 
-                            <div key={info.id} className={estiloDif.card}>
+                            <div  key={info.id} className={`${estiloDif.card}`}>
 
                                 <Image className={estiloDif.icon} alt={info.tit} src={info.image} />
                                 <h2>{info.tit}</h2>

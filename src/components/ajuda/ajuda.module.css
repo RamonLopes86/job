@@ -135,6 +135,34 @@
 
 
 
+
+/* intersection animation */
+
+
+.animaCardOn{
+
+    transform:translateY(0) ;
+
+    opacity: 1;
+    transition: all 1s;
+    transition-timing-function: linear;
+    transition-delay: 400ms;
+}
+
+
+.animaCardOff{
+
+
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: none;
+
+}
+
+
+
+
+
 @media screen and (max-width:1116px) {
 
     .boxAjuda .boxCard {

@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import estiloAjuda from './ajuda.module.css';
 import Image from 'next/image';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
+import React , {useState , useEffect , useRef} from 'react';
 
 
 
@@ -9,14 +10,46 @@ import { faPlus } from '@fortawesome/free-solid-svg-icons';
 export default function Ajuda() {
 
 
+    const [ajudaAnima,  setAjudaAnima] = useState(estiloAjuda.animaCardOff)
+
+
+    const cardRef = useRef()
+
+
+    useEffect(()=>{
+
+        const myObserver = new IntersectionObserver((el)=>{
+
+            el.forEach((e)=>{
+
+                if(e.isIntersecting){
+
+                    setAjudaAnima(estiloAjuda.animaCardOn)
+
+                }else{
+
+                    setAjudaAnima(estiloAjuda.animaCardOff)
+                }
+
+            })
+
+        })
+
+
+        myObserver.observe(cardRef.current)
+
+
+    },[])
+
+
     return (
 
-        <section id='idajuda' className={estiloAjuda.boxAjuda}>
+        <section  ref={cardRef} id='idajuda' className={estiloAjuda.boxAjuda}>
 
-            <h1>Como um Projeto Personalziado  pode trazer beneficios ao seu negócio</h1>
+            <h1 >Como um Projeto Personalziado  pode trazer beneficios ao seu negócio</h1>
 
 
-            <section className={estiloAjuda.boxCard}>
+            <section  className={`${estiloAjuda.boxCard} ${ajudaAnima}`} >
 
                 <div className={estiloAjuda.card}>
 
