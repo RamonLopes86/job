@@ -246,45 +246,6 @@ export default function Quem(){
     },[])
 
 
-    // useEffect(()=>{
-
-    //     const myObserver2 = new IntersectionObserver((e)=>{
-
-    //         e.forEach((info)=>{
-
-
-    //             if(info.isIntersecting){
-
-    //                 console.log(info)
-
-    //             }else{
-
-    //                 console.log('el saiu')
-    //             }
-
-
-
-
-    //         })
-
-    //     })
-
-
-
-
-    //     divRef.current.map((div)=>
-        
-    //             myObserver2.observe(div)
-
-    //     )
-
-        
-
-
-    // },[])
-
-
-
 
 
     return(
