@@ -62,7 +62,7 @@ export default function Quem(){
 
                                 const novo = [...anima]
 
-                                novo[0] = novo[0] === estiloQuem.blMenorOff1 ? estiloQuem.blMenorOn : estiloQuem.blMenorOff1
+                                novo[0] = estiloQuem.blMenorOn
 
 
                                 return novo
@@ -83,7 +83,7 @@ export default function Quem(){
                                 const sNovo = [...anima]
 
 
-                                sNovo[1] = sNovo[1] === estiloQuem.blMenorOff1 ? estiloQuem.blMenorOn : estiloQuem.blMenorOff1
+                                sNovo[1] = estiloQuem.blMenorOn
 
                                 return sNovo
 
@@ -104,7 +104,7 @@ export default function Quem(){
                                   const div2 = [...anima]
   
   
-                                  div2[2] = div2[2] === estiloQuem.blMenorOff1 ? estiloQuem.blMenorOn : estiloQuem.blMenorOff1
+                                  div2[2] = estiloQuem.blMenorOn
   
                                   return div2
   
@@ -140,7 +140,7 @@ export default function Quem(){
 
                                 const novoS = [...anima]
 
-                                novoS[0] = novoS[0] === estiloQuem.blMenorOn ? estiloQuem.blMenorOff1 : estiloQuem.blMenorOn
+                                novoS[0] = estiloQuem.blMenorOff1
 
 
                                 return novoS
@@ -162,7 +162,7 @@ export default function Quem(){
                                   const sNovo2 = [...anima]
   
   
-                                  sNovo2[1] = sNovo2[1] === estiloQuem.blMenorOn ? estiloQuem.blMenorOff1 : estiloQuem.blMenorOn
+                                  sNovo2[1] = estiloQuem.blMenorOff1
   
                                   return sNovo2
   
@@ -184,7 +184,7 @@ export default function Quem(){
                                   const Sdiv2 = [...anima]
   
   
-                                  Sdiv2[2] = Sdiv2[2] === estiloQuem.blMenorOn ? estiloQuem.blMenorOff1 : estiloQuem.blMenorOn
+                                  Sdiv2[2] = estiloQuem.blMenorOff1
   
                                   return Sdiv2
   
