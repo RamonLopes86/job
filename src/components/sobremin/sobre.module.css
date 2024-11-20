@@ -18,6 +18,7 @@
 .boxQuem > .boxImagem {
 
   position: relative;
+
   
     
   & .back{
@@ -28,6 +29,9 @@
    position: absolute;
    left: 10%;
    top: 10%;
+
+   
+
   }
 
 
@@ -35,10 +39,11 @@
 
       width: 500px;
       min-height: 600px;
-
       position: absolute;
       left: 13%;
       top: 10%;
+     
+
 
 
       & .imgBack{
@@ -47,8 +52,7 @@
          height: 600px;
          object-fit: cover;
          object-position: center;
-        
-         
+                  
          
       }
   }
@@ -282,6 +286,71 @@
 
 
 
+/* intersection animationons */
+
+
+.animaOff{
+
+   transform: translateX(350px);
+   opacity: 0;
+   transition: none;
+   filter: blur(3px);
+}
+
+.animaOn{
+
+   transform: translateX(0);
+   filter: blur(0);
+   opacity: 1;
+   transition: all 1s;
+   transition-timing-function: linear;
+   transition-delay: 200ms
+   
+}
+
+
+
+.frontOff{
+
+   transform: scale(0);
+   opacity: 0;
+   filter:blur(10px);
+   transition: none;
+
+}
+
+.frontOn{
+
+   transform: scale(1);
+   opacity: 1;
+   filter: blur(0);
+   transition: all 2s;
+
+
+}
+
+
+
+.boxTexto > div:nth-of-type(1){
+
+   transition-delay: 500ms;
+}
+
+.boxTexto > div:nth-of-type(2){
+
+   transition-delay: 1s;
+}
+
+
+.boxTexto > div:nth-of-type(3){
+
+   transition-delay: 1.5s;
+}
+
+
+
+
+
 
  @media screen and (max-width:1714px) {
 
@@ -333,11 +402,11 @@
 .boxQuem .boxTexto{
 
    display: grid;
-   grid-template-columns: repeat(auto-fit , minmax(400px , 1fr));
+   grid-template-columns: repeat(auto-fill , minmax(400px , 1fr));
    align-items: center;
    align-content: center;
    justify-items: center;
-   
+   overflow: hidden;
    gap: 20px;
    
 
@@ -374,6 +443,19 @@
       
 
  }
+
+
+
+@media screen and (max-width:1290px) {
+
+  .boxQuem .boxTexto > div {
+
+      transition-delay: 0s;
+   }
+
+}
+
+
 
 
 
