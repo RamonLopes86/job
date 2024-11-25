@@ -1,11 +1,77 @@
+'use clinet'
+
 import estiloApre from './apres.module.css';
-import Image from 'next/image';
 import Link from 'next/link';
+import React , {useState , useEffect , useRef} from 'react';
+
+
+
 
 
 
 
 export default function Apresentacao(){
+
+    const [animaImagem , setAnimaImagem] = useState(estiloApre.animaImgOff)
+    const [animaTx , setAnimaTx] = useState(estiloApre.animaTxOff)
+
+    const imgRef = useRef()
+    const txRef = useRef()
+    const contRef = useRef()
+
+
+
+    useEffect(()=>{
+
+        const myObserver = new IntersectionObserver((elemento)=>{
+
+                elemento.forEach((el)=>{
+
+
+                    if(el.isIntersecting){
+
+
+                     
+
+                            setAnimaImagem(estiloApre.animaOn)
+
+                  
+
+                  
+
+                            setAnimaTx(estiloApre.animaOn)
+
+                    
+
+
+                    }else{
+
+
+                     
+
+                            setAnimaImagem(estiloApre.animaImgOff)
+
+                
+
+                    
+
+                            setAnimaTx(estiloApre.animaTxOff)
+
+
+                    }
+
+                })
+
+        })
+
+
+
+            myObserver.observe(contRef.current)
+        // myObserver.observe(imgRef.current)
+        // myObserver.observe(txRef.current)
+
+    },[])
+
 
     return(
 
@@ -14,15 +80,15 @@ export default function Apresentacao(){
                 <section className={estiloApre.boxFlex}>
 
 
-                    <section className={estiloApre.boxConteudo}>
+                    <section ref={contRef}  className={estiloApre.boxConteudo}>
 
-                        <div className={estiloApre.boxImagem}>
+                        <div ref={imgRef}  className={`${estiloApre.boxImagem} ${animaImagem}`}>
 
                           
 
                         </div>
 
-                        <div className={estiloApre.texto}>
+                        <div ref={txRef} className={`${estiloApre.texto} ${animaTx}`}>
 
                             <h1>Ramon Lopes</h1>
                             <p>Sou Desenvolvedor / Programador ,  CEO da <span>Lopfy</span> e vou juntos vamos transfromar suas ideias em realidade , com estratégias visuais criativas para aprimorar a imagem e o <span>crescimento</span> do seu empreendimento </p>

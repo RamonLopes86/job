@@ -104,12 +104,15 @@
 }
 
 .resOn{
-
+ 
     transform: translateX(0);
     opacity: 1;
     transition: all 500ms linear;
+    transition-delay: 300ms;
 
 }
+   
+
 
 
 

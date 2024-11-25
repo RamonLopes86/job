@@ -152,6 +152,14 @@ export default function Duvidas() {
         myObserver.observe(pergRef.current)
 
 
+
+        return () =>{
+
+            myObserver.unobserve(pergRef.current)
+
+        }
+
+
     },[])
 
     

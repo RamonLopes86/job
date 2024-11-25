@@ -7,7 +7,7 @@
     min-height: 1000px;
     background-color: var(--coramarelo);
     font-family: var(--popins);
-
+    overflow: hidden;
 }
 
 
@@ -25,10 +25,12 @@
     margin: 0px auto;
     position: relative;
     border-radius: 10px;
+    
 }
 
 .boxImagem {
 
+   
     width: 550px;
     height: 550px;
   
@@ -43,6 +45,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  
+   
 
 }
 
@@ -56,7 +60,7 @@
         right: -150px;
         top: 20%;
         text-align: center;
-
+        transition-delay: 1s;
        
         
 
@@ -125,11 +129,45 @@
 
     }
 
+
+    
 }
     
+
+/* intersection Animation */
+
+
+.animaImgOff{
+
+    transform:translateX(-100vw);
+    transition: none;
+    
+}
+
+   
+   
+ 
     
 
-  
+.animaTxOff{
+
+    transform: translateX(100vw);
+    transition: none;
+    
+
+
+}
+    
+
+.animaOn{
+    
+    transform: scale(1) translate(0);
+    transition: all 1s linear ;
+    
+   
+}
+
+
 
 @media screen and (max-width:1240px) {
 
@@ -180,10 +218,22 @@
         width: 450px;
         height: 450px;
         left: 50%;
-        transform: translate(-50%);
+        transform: translateX(-50%);
         top: -20%;
         
     }
+
+
+    .animaImgOff{
+
+        
+      
+        transform: translateX(-50vw) !important;
+        opacity: 0;
+        
+    }
+       
+        
 
 
     .boxConteudo .texto{
@@ -192,7 +242,7 @@
         position: static;
         margin-top: 300px;
         width: 80%;
-
+        
 
         & >h1::after{
 
@@ -214,6 +264,7 @@
 
 
 
+    
 
 
 }
@@ -256,6 +307,8 @@
     }
 
 }
+
+
 
 
 
