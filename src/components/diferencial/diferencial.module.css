@@ -265,25 +265,25 @@
 
 .bl1Off{
 
-    transform: translateX(-200px);
-    opacity: 0;
+    transform: scale(0) translateX(-800px);
+
     transition: none;
 
 }
 
-.bl2Off{
 
-    transform: translateX(-200px);
-    opacity: 0;
-    transition: none;
-}
 
 
 .blOn{
 
-    transform: translate(0);
+    transform: scale(1)  translateX(0);
     transition: all 800ms linear;
 }
+
+
+
+
+
 
 
 @media screen and (max-width:700px) {

@@ -36,205 +36,84 @@ export default function Diferencial() {
 
         const myObserver = new IntersectionObserver((elemento) => {
 
-            elemento.forEach((el) => {
+                elemento.forEach((el)=>{
 
-                if (el.isIntersecting) {
+                    const index = cardRef.current.indexOf(el.target)
 
-
-                    if (el.target === cardRef.current[0]) {
-
+                    if(el.isIntersecting){
+                      
+                        
                         setAnimacoes(
 
+                            
                             animacoes => {
 
-                                const novo = [...animacoes]
+
+                                const novAnima = [...animacoes]
 
 
-                                novo[0] = estiloDif.blOn
+                                novAnima[index] = estiloDif.blOn
 
+                                return novAnima
+                                
 
-                                return novo
                             }
+
 
                         )
 
+                    }else{
 
-                    }
-
-                    if (el.target === cardRef.current[1]) {
 
                         setAnimacoes(
 
+                            
                             animacoes => {
 
-                                const novo = [...animacoes]
+
+                                const novoAnima2 = [...animacoes]
 
 
-                                novo[1] = estiloDif.blOn
+                                novoAnima2[index] = estiloDif.bl1Off
 
+                                return novoAnima2
 
-                                return novo
                             }
+
 
                         )
 
-
                     }
 
-                    if (el.target === cardRef.current[2]) {
+                })
 
-                        setAnimacoes(
 
-                            animacoes => {
+        })
 
-                                const novo = [...animacoes]
 
 
-                                novo[2] = estiloDif.blOn
 
 
-                                return novo
-                            }
 
-                        )
 
 
-                    }
+        cardRef.current.forEach((card) => {
 
+            myObserver.observe(card)
 
-                    if (el.target === cardRef.current[3]) {
 
-                        setAnimacoes(
+        })
 
-                            animacoes => {
 
-                                const novo = [...animacoes]
+        return () =>{
 
+            cardRef.current.forEach((card)=>{
 
-                                novo[3] = estiloDif.blOn
-
-
-                                return novo
-                            }
-
-                        )
-
-
-                    }
-
-              
-
-                }else{
-
-                    if (el.target === cardRef.current[0]) {
-
-                        setAnimacoes(
-
-                            animacoes => {
-
-                                const novo = [...animacoes]
-
-
-                                novo[0] = estiloDif.bl1Off
-
-
-                                return novo
-                            }
-
-                        )
-
-
-                    }
-
-                    if (el.target === cardRef.current[1]) {
-
-                        setAnimacoes(
-
-                            animacoes => {
-
-                                const novo = [...animacoes]
-
-
-                                novo[1] = estiloDif.bl1Off
-
-
-                                return novo
-                            }
-
-                        )
-
-
-                    }
-
-                    if (el.target === cardRef.current[2]) {
-
-                        setAnimacoes(
-
-                            animacoes => {
-
-                                const novo = [...animacoes]
-
-
-                                novo[2] = estiloDif.bl1Off
-
-
-                                return novo
-                            }
-
-                        )
-
-
-                    }
-
-                    if (el.target === cardRef.current[3]) {
-
-                        setAnimacoes(
-
-                            animacoes => {
-
-                                const novo = [...animacoes]
-
-
-                                novo[3] = estiloDif.bl1Off
-
-
-                                return novo
-                            }
-
-                        )
-
-
-                    }
-
-
-
-                }
-
-
-
-                    
-
-
-
-
+                myObserver.unobserve(card)
 
             })
 
-        })
-
-
-
-
-
-
-
-
-        cardRef.current.map((itens) => {
-
-            myObserver.observe(itens)
-
-
-        })
+        }
 
 
     }, [])
