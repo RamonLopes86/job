@@ -51,16 +51,16 @@ export default function Duvidas() {
 
         setAnimacoes(
 
-            animacoes => (animacoes.map((estiloAtual, indice) => {
+             animacoes.map((estiloAtual, indice) => {
 
                 return indice === index ? (estiloAtual === estiloAjuda.animaOff ? estiloAjuda.animaOn : estiloAjuda.animaOff) : estiloAtual
 
-            }))
+            })
 
         )
 
 
-        setIcone ( iconeAnterior => iconeAnterior.map((icones , indice)=>{
+        setIcone  (icone.map((icones , indice)=>{
 
             return indice === index ? (icones === faPlus ? faMinus : faPlus) : icones
 
