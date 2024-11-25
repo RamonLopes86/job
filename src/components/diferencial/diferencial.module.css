@@ -260,6 +260,31 @@
 
 
 
+/* intersection animations */
+
+
+.bl1Off{
+
+    transform: translateX(-200px);
+    opacity: 0;
+    transition: none;
+
+}
+
+.bl2Off{
+
+    transform: translateX(-200px);
+    opacity: 0;
+    transition: none;
+}
+
+
+.blOn{
+
+    transform: translate(0);
+    transition: all 800ms linear;
+}
+
 
 @media screen and (max-width:700px) {
 
