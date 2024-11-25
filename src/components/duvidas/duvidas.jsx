@@ -2,7 +2,7 @@
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import estiloAjuda from './duvidas.module.css';
-import React, { useState } from 'react';
+import React, { useState , useEffect , useRef } from 'react';
 import {faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
 import arrayDados from '@/dados/array';
 
@@ -35,7 +35,27 @@ export default function Duvidas() {
 
     }))
 
-   
+    
+
+
+
+  const [animaPerg , setAnimaPerg] = useState(estiloAjuda.pergOff)
+  const pergRef = useRef()
+
+  const [animaRes , setAnimaRes] = useState(arrayDados.map(()=>{
+
+            return (
+                
+                estiloAjuda.resOff    
+            )    
+    }))
+               
+            
+
+           
+        
+
+
 
 
 
@@ -68,7 +88,15 @@ export default function Duvidas() {
 
 
 
+        setAnimaRes(
 
+            animaRes.map((anima , indice)=>{
+
+                return indice === index ? (anima === estiloAjuda.resOff ? estiloAjuda.resOn : estiloAjuda.resOff) : anima
+
+            })
+
+        )
 
         
 
@@ -97,8 +125,36 @@ export default function Duvidas() {
 
 
 
+  
+    
 
 
+   
+
+
+
+    useEffect(()=>{
+
+        const myObserver = new IntersectionObserver((elemento)=>{
+
+
+            elemento.forEach((el)=>{
+
+
+                setAnimaPerg(el.isIntersecting ? estiloAjuda.pergOn : estiloAjuda.pergOff)
+
+
+            })
+
+
+    })
+
+        myObserver.observe(pergRef.current)
+
+
+    },[])
+
+    
 
 
 
@@ -111,7 +167,7 @@ export default function Duvidas() {
 
 
 
-            <section className={estiloAjuda.boxPerguntas}>
+            <section ref={pergRef} className={`${estiloAjuda.boxPerguntas} ${animaPerg}`}  >
 
 
                 {
@@ -124,7 +180,7 @@ export default function Duvidas() {
 
                                     <h1 onClick={() => clikPergunta(index)} > <FontAwesomeIcon icon={icone[index]} /> {info.perg}</h1>
                                     <div  className={`${estiloAjuda.perguntas} ${animacoes[index]}`} >
-                                        <p>{info.res}</p>
+                                        <p className={animaRes[index]}>{info.res}</p>
                                     </div>
                                     
                                 </section>
