@@ -41,7 +41,7 @@ export default function Diferencial() {
    
         const ajuste = ()=>{
 
-            const  vl = tit.current.getBoundingClientRect().top - 1000
+            const  vl = tit.current.getBoundingClientRect().top
 
             if(vl  <= window.innerHeight  &&  vl >= 0){
 

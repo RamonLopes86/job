@@ -284,7 +284,7 @@
 
 .titOff{
 
-transform: translateX(150px);
+transform:  translateX(150px);
 opacity: 0;
 filter: blur(5px);
 transition: all 500ms linear;
