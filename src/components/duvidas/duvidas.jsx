@@ -36,13 +36,11 @@ export default function Duvidas() {
     }))
 
     
-
-
-
   const [animaPerg , setAnimaPerg] = useState(estiloAjuda.pergOff)
-  const pergRef = useRef()
 
-  const [animaRes , setAnimaRes] = useState(arrayDados.map(()=>{
+  const pergRef = useRef()
+  
+ const [animaRes , setAnimaRes] = useState(arrayDados.map(()=>{
 
             return (
                 
@@ -50,8 +48,44 @@ export default function Duvidas() {
             )    
     }))
                
-            
 
+const tituloRef = useRef(null)
+
+const [condAnima , setCondiAnima] = useState(true)
+
+
+useEffect(()=>{
+
+const animTit = () =>{
+
+ 
+
+    const refTop = tituloRef.current.getBoundingClientRect().top
+
+    if(refTop <= window.innerHeight && refTop >=0){
+
+        setCondiAnima(true)
+
+    }else{
+
+        setCondiAnima(false)
+    }
+
+
+}
+
+
+window.addEventListener('scroll' , animTit)
+
+
+return () =>{
+
+
+    window.removeEventListener('scroll' , animTit)
+}
+
+
+},[])
            
         
 
@@ -171,7 +205,7 @@ export default function Duvidas() {
 
         <section id='idperguntas' className={estiloAjuda.boxPai}>
 
-            <h1>Perguntas Comuns</h1>
+            <h1 ref={tituloRef} className={condAnima ? estiloAjuda.tOn : estiloAjuda.tOff}  >Perguntas Comuns</h1>
 
 
 

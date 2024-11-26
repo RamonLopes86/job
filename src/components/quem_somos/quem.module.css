@@ -399,7 +399,7 @@
 
 .imgOff{
 
-    transform: translateX(350px);
+    transform: translateX(180px);
     transition: none;
     opacity: 0;
     filter: blur(2px);
@@ -445,6 +445,22 @@
 }
 
 
+
+.crefOn{
+
+    transform: translate(0);
+    transition: all 800ms linear;
+    opacity: 1;
+}
+
+.crefOff{
+
+
+    transform: translate(-150px);
+    transition: none;
+    opacity: 0;
+
+}
 
 
 

@@ -114,6 +114,20 @@
    
 
 
+.tOn{
+
+    transform: translate(0);
+    opacity: 1;
+    transition: all 800ms linear;
+}
+
+.tOff{
+
+    transform: translateY(-150px);
+    opacity: 0;
+    transition: all 500ms linear;
+
+}
 
 
 @media screen and (max-width:1000px) {

@@ -19,8 +19,11 @@ export default function Quem(){
 
     const [anima , setAnima] = useState(Array.from({length:3} , (_,index)=> index = estiloQuem.blMenorOff1))
 
+    const [ animEscondido , setAnimaEscondido] = useState(estiloQuem.crefOff)
+
     const imgRef = useRef()
     const blRef = useRef()
+    const cRef = useRef()
 
 
 
@@ -38,6 +41,13 @@ export default function Quem(){
                     
 
                     if(info.isIntersecting){
+
+                        
+                        if(info.target === cRef.current){
+
+                            setAnimaEscondido(estiloQuem.crefOn)
+
+                        }
 
                     
                         if(info.target === imgRef.current){
@@ -119,6 +129,12 @@ export default function Quem(){
 
 
                     }else{
+
+                        if(info.target === cRef.current){
+
+                            setAnimaEscondido(estiloQuem.crefOff)
+
+                        }
 
                         if(info.target === imgRef.current){
 
@@ -207,6 +223,7 @@ export default function Quem(){
 
         myObserver.observe(imgRef.current)
         myObserver.observe(blRef.current)
+        myObserver.observe(cRef.current)
         
         divRef.current.map((div)=>
         
@@ -283,7 +300,7 @@ export default function Quem(){
                 </div>
 
 
-                <div className={estiloQuem.boxTextoEscondido}>
+                <div ref={cRef} className={`${estiloQuem.boxTextoEscondido} ${animEscondido}`}>
 
                     <h1>O que construimos?</h1>
 
