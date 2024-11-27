@@ -186,7 +186,10 @@ export default function Sobre() {
 
             animaRef.current.map((blocos)=>{
 
+               if(blocos){
+
                 return myObserver.unobserve(blocos)
+               }
             })
 
         }

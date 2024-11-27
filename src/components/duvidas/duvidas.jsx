@@ -189,7 +189,10 @@ return () =>{
 
         return () =>{
 
-            myObserver.unobserve(pergRef.current)
+            if (pergRef.current){
+
+                myObserver.unobserve(pergRef.current)
+            }
 
         }
 

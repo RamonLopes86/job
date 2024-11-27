@@ -147,7 +147,11 @@ export default function Diferencial() {
 
             cardRef.current.forEach((card)=>{
 
+               if(card) {
+
                 myObserver.unobserve(card)
+
+               }
 
             })
 

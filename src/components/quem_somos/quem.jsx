@@ -240,15 +240,25 @@ export default function Quem(){
 
         return () => {
 
-            myObserver.unobserve(imgRef.current)
-            myObserver.unobserve(blRef.current)
+            if(imgRef.current){
+
+                myObserver.unobserve(imgRef.current)
+            }
+            
+            if(blRef.current){
+
+                myObserver.unobserve(blRef.current)
+            }
             
 
             divRef.current.map((div)=>
         
                 {
     
+                   if(div){
+
                     return myObserver.unobserve(div)
+                   }
                 
                 }
             
