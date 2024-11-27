@@ -67,7 +67,8 @@ useEffect(()=>{
             <section className={`${estilobanner.boxTexto} ${tx}`}>
                 <h1>Conquiste uma <mark>visibilidade</mark> digital marcante para seu <mark>negócio</mark></h1>
                 <p>Profissional dedicado à criação de sites personalizados, seguros e elaborados para atrair um maior número de clientes e obter resultados eficazes.</p>
-                <button>Vamos conversar ? <Image alt='icone do whats app' className={estilobanner.imgWpp} src={wpp} /> </button>
+                <Link href={'https://wa.me/71991265530'}  target='_Blank' ><button>Vamos conversar ? <Image alt='icone do whats app' className={estilobanner.imgWpp} src={wpp} /> </button></Link>
+                
             </section>
             <section className={`${estilobanner.boxImagem} ${bxImg}`}  >
                 <Image className={estilobanner.image} alt='image' src={banner3} />

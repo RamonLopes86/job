@@ -2,6 +2,7 @@ import Image from 'next/image';
 import estiloQuem from './quem.module.css';
 import dev from '../../../public/dev.jpg'
 import wpp from '../../../public/whats.png'
+import Link from 'next/link';
 
 import React , {useState , useEffect , useRef} from 'react';
 
@@ -278,7 +279,7 @@ export default function Quem(){
 
                     <h1>O que construimos?</h1>
                     <p>Um site é muito mais do que uma página comum na internet ,ele representa a entrada principal para o seu negócio, funcionando como uma vitrine que exibe seus produtos ou serviços.</p>
-                    <button>Dúvidas ? <Image className={estiloQuem.iconWpp} src={wpp} alt='icone do whats app'/>  </button>
+                    <Link className={estiloQuem.link} href={'https://wa.me/71991265530'} target='_Blank' ><button>Dúvidas ? <Image className={estiloQuem.iconWpp} src={wpp} alt='icone do whats app'/>  </button></Link>
 
                     <div className={estiloQuem.boxBlocosTx}>
 
@@ -306,7 +307,7 @@ export default function Quem(){
 
                     <p>Um site é muito mais do que uma página comum na internet ,ele representa a entrada principal para o seu negócio, funcionando como uma vitrine que exibe seus produtos ou serviços.</p>
                         
-                    <button className={estiloQuem.btnEscondido}>Dúvidas ? <Image className={estiloQuem.iconWppEsc} src={wpp} alt='icone do whats app'/>  </button>
+                   <Link href={`https://wa.me/71991265530`} target='_Blank'><button className={estiloQuem.btnEscondido}>Dúvidas ? <Image className={estiloQuem.iconWppEsc} src={wpp} alt='icone do whats app'/>  </button></Link>
 
                     <div className={estiloQuem.boxBlocosEscondTx}>
 

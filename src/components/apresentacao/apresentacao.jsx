@@ -67,8 +67,7 @@ export default function Apresentacao(){
 
 
             myObserver.observe(contRef.current)
-        // myObserver.observe(imgRef.current)
-        // myObserver.observe(txRef.current)
+            
 
     },[])
 
