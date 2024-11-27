@@ -91,7 +91,7 @@ export default function Apresentacao(){
                         <div ref={txRef} className={`${estiloApre.texto} ${animaTx}`}>
 
                             <h1>Ramon Lopes</h1>
-                            <p>Sou Desenvolvedor / Programador ,  CEO da <span>Lopfy</span> e vou juntos vamos transfromar suas ideias em realidade , com estratégias visuais criativas para aprimorar a imagem e o <span>crescimento</span> do seu empreendimento </p>
+                            <p>Sou Desenvolvedor / Programador ,  e com a  <span>Lopfy</span> vamos juntos  transfromar suas ideias em realidade , com estratégias visuais criativas para aprimorar a imagem e o <span>crescimento</span> do seu empreendimento </p>
 
                             <Link target='_Blank' href={'https://ramon-portifolio.vercel.app/'}> <button>Portifólio</button></Link>
                            
