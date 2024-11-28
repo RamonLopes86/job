@@ -1,10 +1,12 @@
+'use client'
+
 import estiloMOdelo from './modelo.module.css'
 import Link from 'next/link'
-import Image from 'next/image'
 import arrayProj from '@/dados/arrProj'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowRight, faEye } from '@fortawesome/free-solid-svg-icons'
-import barber from '../../../public/barberCompleta.png'
+import { faArrowRight, faHandPointer } from '@fortawesome/free-solid-svg-icons'
+import React, { useState } from 'react'
+
 
 
 
@@ -22,11 +24,11 @@ export default function Modelo() {
 
         <section className={estiloMOdelo.boxModelos}>
 
-            <div className={estiloMOdelo.boxButton}>
 
-                <Link href={'/'}> <button className={estiloMOdelo.btnSair}>  <FontAwesomeIcon className={estiloMOdelo.iconSeta} icon={faArrowRight} />   </button> </Link>
 
-            </div>
+            <Link href={'/'}> <button className={estiloMOdelo.btnSair}>  <FontAwesomeIcon className={estiloMOdelo.iconSeta} icon={faArrowRight} />   </button> </Link>
+
+
 
 
 
@@ -36,26 +38,33 @@ export default function Modelo() {
 
 
                 {
-                    arrayProj.map((imagens) => {
+                    arrayProj.map((imagens, index) => {
 
 
                         return (
 
-                            <div className={estiloMOdelo.cardd}>
+                            <Link key={index} href={imagens.link} target='_blank'>
+
+                                <div  className={estiloMOdelo.cardd}>
 
 
 
 
 
-                                <div style={{ backgroundImage: `url(/${imagens.img}) `}} className={estiloMOdelo.imageContainer}>
+                                    <div style={{ backgroundImage: `url(/${imagens.img}) ` }} className={estiloMOdelo.imageContainer}>
+
+
+
+                                    </div>
+
+
+                                    <p>click para ver o projeto <FontAwesomeIcon className={estiloMOdelo.iconPointer} icon={faHandPointer} /> </p>
 
 
 
                                 </div>
 
-
-
-                            </div>
+                            </Link>
 
 
 
@@ -69,37 +78,6 @@ export default function Modelo() {
 
 
                 }
-
-
-
-
-
-
-                {/* {
-
-                            arrayProj.map((image , index)=>{
-
-                                    return(
-
-
-                                        <div className={estiloMOdelo.card} key={index}>
-
-                                            <Image alt='imagens dos projetos desenvolvidos' className={estiloMOdelo.image} src={image.img}/>
-
-                                    
-                                            <Link href={''}> <button className={estiloMOdelo.btnVer}>Ver projeto  <FontAwesomeIcon className={estiloMOdelo.iconOlho} icon={faEye}/>   </button> </Link>
-                                          
-
-                                        </div>
-
-                                    )
-
-                            })
-
-
-                        }
-                     */}
-
 
             </section>
 

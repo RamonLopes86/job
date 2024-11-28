@@ -5,61 +5,55 @@ const arrayProj = [
     {
 
         img:'barberCompleta.png',
-        link:''
+        link:'https://proj-barbearia-dusky.vercel.app/'
 
     },
 
     {
 
         img:'pet.png',
-        link:''
-
-    },
-    {
-
-        img:'rest.png',
-        link:''
+        link:'#'
 
     },
     {
 
         img:'sorv.png',
-        link:''
+        link:'#'
 
     },
     {
 
         img:'viagem.png',
-        link:''
+        link:'#'
 
     },
     {
 
         img:'clinica.png',
-        link:''
+        link:'#'
 
     },
     {
 
         img:'pousada.png',
-        link:''
+        link:'#'
 
     },
     {
 
         img:'alfa.png',
-        link:''
+        link:'#'
 
     },{
 
         img:'met.png',
-        link:''
+        link:'#'
     },
 
     {
 
         img:'caf.png',
-        link:''
+        link:'#'
 
     }
    

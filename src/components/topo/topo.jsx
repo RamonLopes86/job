@@ -19,11 +19,13 @@ export default function Topo(props){
 
             <FontAwesomeIcon onClick={() => props.click('abrir')} className={estiloTopo.menuHam} icon={faBars}/>
 
-            <div  className={estiloTopo.marca}>
-                <p>L</p>
-                <p>opfy</p>
+            <Link href={'#idlopfy'}>
+                <div  className={estiloTopo.marca}>
+                    <p>L</p>
+                    <p>opfy</p>
                 
-            </div>
+                </div>
+            </Link>
 
             <nav className={estiloTopo.navPrincipal}>
 
