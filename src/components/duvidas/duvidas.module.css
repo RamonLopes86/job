@@ -54,7 +54,7 @@
     & p{
 
         font-size: 1.4rem;
-        color: rgba(0, 0, 0, 0.788);
+        color: var(--coramaforte);
         font-weight: 600;
     }
    
