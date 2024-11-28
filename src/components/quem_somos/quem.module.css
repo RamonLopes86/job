@@ -62,7 +62,7 @@
     position: absolute;
     max-width: 700px;
     min-height: 300px;
-    top: 40%;
+    top: 28%;
     left: -30%;
     background-color: white;
     border: 5px solid var(--corroxo);
@@ -400,7 +400,7 @@
 .imgOn{
 
     transform: translateX(0);
-    transition: all 2s;
+    transition: all 1s;
     /* transition-timing-function: linear; */
     transition-delay: 300ms;
     opacity: 1;
@@ -419,8 +419,8 @@
 .blOn{
 
     transform: translateY(0);
-    transition: all 1.8s;
-    transition-delay: 1.2s;
+    transition: all 800ms;
+    transition-delay: 800ms;
 }
 
 .blOff{
