@@ -12,7 +12,7 @@ const arrayProj = [
     {
 
         img:'pet.png',
-        link:'#'
+        link:'https://ramonlopes86.github.io/projeto-petshop/'
 
     },
     {
@@ -24,36 +24,36 @@ const arrayProj = [
     {
 
         img:'viagem.png',
-        link:'#'
+        link:'https://ramonlopes86.github.io/viagem/'
 
     },
     {
 
         img:'clinica.png',
-        link:'#'
+        link:'https://ramonlopes86.github.io/Proj_Clinica/'
 
     },
     {
 
         img:'pousada.png',
-        link:'#'
+        link:'https://ramonlopes86.github.io/projeto-hotel/'
 
     },
     {
 
         img:'alfa.png',
-        link:'#'
+        link:'https://ramonlopes86.github.io/projeto-tabela/'
 
     },{
 
         img:'met.png',
-        link:'#'
+        link:'https://meteora-ochre-nine.vercel.app/'
     },
 
     {
 
         img:'caf.png',
-        link:'#'
+        link:'https://cafena-ecru.vercel.app/'
 
     },
     {
