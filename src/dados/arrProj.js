@@ -4,7 +4,7 @@ const arrayProj = [
 
     {
 
-        img:'pousada.png',
+        img:'barberCompleta.png',
         link:''
 
     },
@@ -41,15 +41,28 @@ const arrayProj = [
     },
     {
 
-        img:'barberCompleta.png',
+        img:'pousada.png',
         link:''
 
     },
     {
 
-        img:'alfa.png'
+        img:'alfa.png',
+        link:''
+
+    },{
+
+        img:'met.png',
+        link:''
+    },
+
+    {
+
+        img:'caf.png',
+        link:''
 
     }
+   
 
 
 
