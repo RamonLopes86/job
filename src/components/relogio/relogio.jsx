@@ -30,13 +30,13 @@ export default function Relogio(){
 
     if(hora >=0 && hora <=9){
 
-      hora = '0' + hora 
+      setHora(`0 ${hora}`)
 
     }
 
     if(min >=0 && min <=9){
 
-      min = '0' + min
+      setMin(` 0 ${min}`)
 
     }
 
@@ -55,9 +55,9 @@ export default function Relogio(){
 
     }
 
+  })
     
 
-  },[])
    
 
 

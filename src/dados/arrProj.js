@@ -18,7 +18,7 @@ const arrayProj = [
     {
 
         img:'sorv.png',
-        link:'#'
+        link:'https://proj-restaurante-ashen.vercel.app/'
 
     },
     {
@@ -54,6 +54,18 @@ const arrayProj = [
 
         img:'caf.png',
         link:'#'
+
+    },
+    {
+
+        img:'const.png',
+        link:'https://loja-frar.vercel.app/'
+
+
+    },
+    {
+        img:'rest.png',
+        link:'https://projeto-menu-gules.vercel.app/'
 
     }
    
