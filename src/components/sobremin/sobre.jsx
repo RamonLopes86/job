@@ -241,6 +241,7 @@ export default function Sobre() {
 
         <section id='idsobre' className={estiloSobre.boxQuem}>
 
+                
 
             <section className={estiloSobre.boxImagem}>
 
