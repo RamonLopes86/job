@@ -11,6 +11,7 @@ import Duvidas from "@/components/duvidas/duvidas";
 import Apresentacao from "@/components/apresentacao/apresentacao";
 import Diferencial from "@/components/diferencial/diferencial";
 import Footer from "@/components/footer/footer";
+import Relogio from "@/components/relogio/relogio";
 import Link from "next/link";
 
 import React, { useEffect, useState } from "react";
@@ -23,29 +24,7 @@ import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 export default function Home() {
 
   const [animNav, setAnimaNav] = useState(styles.animaNavOff)
-  const [msg , setMsg] = useState()
-
-  let hora = new Date().getHours()
-  let min = new Date().getMinutes()
- 
-
-  useEffect(()=>{
-
-    if(hora > 5 && hora <= 12){
-
-      setMsg('Bom dia')
-
-    }else if(hora > 12 && hora <= 18){
-
-      setMsg('Boa Tarde')
-    }else{
-      setMsg('Boa Noite')
-    }
-
-    
-
-  },[hora , min])
-
+  
 
 
   function openNav(param) {
@@ -134,16 +113,15 @@ export default function Home() {
       <Link className={styles.linkTopo} href={'#idtopo'}> 
       
        
-
         <FontAwesomeIcon className={styles.iconTop} icon={faChevronUp} />
+
         <p>TOPO</p>
       
       
       </Link>
 
-      <div className={styles.horario}>
-          <p> {msg} , são {hora}:{min} </p>
-      </div>
+
+      <Relogio/>
 
 
     </div>

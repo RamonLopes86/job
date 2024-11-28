@@ -5,7 +5,7 @@ import Link from 'next/link'
 import arrayProj from '@/dados/arrProj'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight, faHandPointer } from '@fortawesome/free-solid-svg-icons'
-import React, { useState } from 'react'
+import Relogio from '../relogio/relogio'
 
 
 
@@ -13,10 +13,6 @@ import React, { useState } from 'react'
 
 
 export default function Modelo() {
-
-
-
-
 
 
 
@@ -81,6 +77,8 @@ export default function Modelo() {
             </section>
 
 
+
+            <Relogio/>    
 
         </section>
 
