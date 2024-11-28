@@ -23,6 +23,29 @@ import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 export default function Home() {
 
   const [animNav, setAnimaNav] = useState(styles.animaNavOff)
+  const [msg , setMsg] = useState()
+
+  let hora = new Date().getHours()
+  let min = new Date().getMinutes()
+ 
+
+  useEffect(()=>{
+
+    if(hora > 5 && hora <= 12){
+
+      setMsg('Bom dia')
+
+    }else if(hora > 12 && hora <= 18){
+
+      setMsg('Boa Tarde')
+    }else{
+      setMsg('Boa Noite')
+    }
+
+    
+
+  },[hora , min])
+
 
 
   function openNav(param) {
@@ -82,8 +105,8 @@ export default function Home() {
       <Topo
 
         click={openNav}
-
       />
+
       <Banner
 
         anima={animNav}
@@ -117,6 +140,10 @@ export default function Home() {
       
       
       </Link>
+
+      <div className={styles.horario}>
+          <p> {msg} , são {hora}:{min} </p>
+      </div>
 
 
     </div>

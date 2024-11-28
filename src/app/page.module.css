@@ -51,3 +51,18 @@
     }
 
 }
+
+
+.horario{
+
+    position: fixed;
+    bottom: 10px;
+    left: 10px; 
+    z-index: 1;
+    background-color: var(--corroxo);
+    padding: 2px 10px;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.1rem;
+}
+    

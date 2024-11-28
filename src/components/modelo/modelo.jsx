@@ -24,6 +24,7 @@ export default function Modelo() {
 
         <section className={estiloMOdelo.boxModelos}>
 
+            <h2>Alguns projetos</h2>
 
 
             <Link href={'/'}> <button className={estiloMOdelo.btnSair}>  <FontAwesomeIcon className={estiloMOdelo.iconSeta} icon={faArrowRight} />   </button> </Link>
@@ -47,24 +48,22 @@ export default function Modelo() {
 
                                 <div  className={estiloMOdelo.cardd}>
 
-
-
-
+                                
 
                                     <div style={{ backgroundImage: `url(/${imagens.img}) ` }} className={estiloMOdelo.imageContainer}>
 
-
-
                                     </div>
-
 
                                     <p>click para ver o projeto <FontAwesomeIcon className={estiloMOdelo.iconPointer} icon={faHandPointer} /> </p>
 
 
-
+                                    
                                 </div>
 
+
                             </Link>
+
+
 
 
 

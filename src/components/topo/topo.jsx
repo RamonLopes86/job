@@ -32,7 +32,7 @@ export default function Topo(props){
                 <ul>
                     <Link href={'#idsobre'} className={estiloTopo.linkTopo}><li>Sobre</li></Link>
                     <Link href={'#idquem'} className={estiloTopo.linkTopo}> <li>Quem Somos</li></Link>
-                    <Link href={'/modelos'} className={estiloTopo.linkTopo}> <li>Modelos</li></Link>
+                    <Link href={'/modelos'} className={estiloTopo.linkTopo}> <li>Projetos</li></Link>
                     <Link href={'#idnegocio'} className={estiloTopo.linkTopo}><li>Negócio</li></Link>
                     <Link href={'#idajuda'} className={estiloTopo.linkTopo}> <li>Vantagens</li></Link>
                     <Link href={'#idperguntas'} className={estiloTopo.linkTopo}><li>Perguntas</li></Link>

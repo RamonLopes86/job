@@ -4,6 +4,25 @@
     min-height: 100vh;
     background-image: linear-gradient(to bottom , var(--corroxo)  , rgba(255, 255, 255, 0.377));
     overflow: hidden;
+    font-family: var(--popins);
+
+
+    & h2{
+
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        padding-top: 20px;
+        color:white;
+        font-size: 3rem;
+        max-width: 1500px;
+        margin: 0px auto;
+        text-align: center;
+        text-decoration: underline 2px var(--coramaforte);
+        text-underline-offset: 8px;
+        text-transform: uppercase;
+        color: var(--coramaforte);
+
+    }
     
     
 }
@@ -150,7 +169,11 @@
 }
 
 
+.cardd:has(p:hover) > .imageContainer{
 
+    transform: translateY(-50%);
+    transition: all 2s linear;
+} 
     
 
 
