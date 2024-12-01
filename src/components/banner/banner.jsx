@@ -87,7 +87,7 @@ useEffect(()=>{
                     <ul>
                         <Link onClick={props.recolher} href={'#idsobre'} className={estilobanner.linkTopo}><li>Sobre</li></Link>
                         <Link onClick={props.recolher} href={'#idquem'} className={estilobanner.linkTopo}> <li>Quem Somos</li></Link>
-                        <Link onClick={props.recolher} href={'/modelos'} className={estilobanner.linkTopo}> <li>Modelos</li></Link>
+                        <Link onClick={props.recolher} href={'/modelos'} className={estilobanner.linkTopo}> <li>Projetos</li></Link>
                         <Link onClick={props.recolher} href={'#idnegocio'} className={estilobanner.linkTopo}><li>Negócio</li></Link>
                         <Link onClick={props.recolher} href={'#idajuda'} className={estilobanner.linkTopo}> <li>Vantagens</li></Link>
                         <Link onClick={props.recolher} href={'#idperguntas'} className={estilobanner.linkTopo}><li>Perguntas</li></Link>
