@@ -1,8 +1,6 @@
 import "./globals.css";
 
 
-
-
 export const metadata = {
   title: "Lopfy - Projetos",
   description: "Criação de projetos personalizados com suporte vitalício",
@@ -11,15 +9,27 @@ export const metadata = {
 
     title:'Lopfy - Projetos',
     description:'Projetos Personalizados - Você se destacando na Web',
+    keywords:['projetos personalizados' , 'desenvolvimento web' , 'tecnologia', 'site' , 'desenvolvedor' , 'vitalícia'],
+    authors:[
+      {
+
+        nome:'lopfy',
+        url:'https://job-pi-nine.vercel.app/'
+      }
+
+    ],
+
     images:[
 
       'favico.png'
+    ],
 
-    ]
+    locale:'pt_BR',
 
-    
+    type:'website'
 
   },
+
 
   robots:{
 
