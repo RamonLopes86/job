@@ -1,0 +1,4 @@
+user-agent:*
+disallow:/admin/
+Allow: /
+Sitemap: https://job-pi-nine.vercel.app/sitemap.xml
