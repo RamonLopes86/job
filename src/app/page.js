@@ -22,6 +22,7 @@ import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
 
 
+
 export default function Home() {
 
   const [animNav, setAnimaNav] = useState(styles.animaNavOff)
