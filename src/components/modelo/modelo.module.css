@@ -52,8 +52,8 @@
     right: 20px;
     z-index: 1;
    
- 
 }
+ 
 
 
 .iconSeta{
@@ -210,6 +210,19 @@
 
         transform: scale(0.8) rotate(-10deg);
     }
+
+}
+
+
+
+@media screen and (max-width:660px) {
+
+    .boxModelos .btnSair{
+
+        
+        top: 120px;
+        
+     }
 
 }
 
