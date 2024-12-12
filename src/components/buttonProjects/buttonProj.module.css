@@ -93,3 +93,16 @@
     }
 
 }
+
+
+@media screen and (max-width:500px) {
+
+    .boxBtnProj{
+
+       bottom: 75px;
+       right: 10px;
+
+    }
+
+
+}
