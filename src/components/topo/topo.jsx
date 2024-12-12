@@ -3,7 +3,7 @@ import estiloTopo from './topo.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faBars , faHandPointer } from '@fortawesome/free-solid-svg-icons';
 
 
 

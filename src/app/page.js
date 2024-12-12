@@ -1,6 +1,6 @@
 'use client'
 
-import Image from "next/image";
+
 import styles from "./page.module.css";
 import Topo from "@/components/topo/topo";
 import Banner from "@/components/banner/banner";
@@ -12,12 +12,13 @@ import Apresentacao from "@/components/apresentacao/apresentacao";
 import Diferencial from "@/components/diferencial/diferencial";
 import Footer from "@/components/footer/footer";
 import Relogio from "@/components/relogio/relogio";
+import ViewProj from "@/components/buttonProjects/buttonProjects";
 import Link from "next/link";
-
 import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
+ 
 
 
 
@@ -120,8 +121,11 @@ export default function Home() {
       
       </Link>
 
-
+      <ViewProj/>
+      
       <Relogio/>
+
+
 
 
     </div>

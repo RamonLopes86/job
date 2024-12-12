@@ -1,0 +1,95 @@
+.boxBtnProj{
+
+    position: fixed;
+    bottom: 10px;
+    right: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  
+   
+}
+
+
+.boxBtnProj button {
+
+    width:150px;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius:20px;
+    background-color: var(--coramaforte);
+    position: relative;
+    overflow: hidden;
+    animation-name: moveProj;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+   
+   
+    & p{
+
+    font-family: var(--roboto);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 100%;
+    z-index: 1;
+    color: white;
+    text-transform: uppercase;
+
+    }
+    
+
+       
+
+}
+
+
+
+
+
+
+.boxBtnProj button::after{
+
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--corroxo);
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: all 200ms linear;
+    cursor: pointer;
+    
+}
+   
+
+
+
+
+.boxBtnProj button:hover::after{
+
+
+    transform: translateX(0);
+    transition: all 200ms linear;
+    
+}
+
+
+@keyframes moveProj {
+    
+    to{
+
+        transform: translateY(-10px);
+        transition: all 500ms linear;
+
+    }
+
+}
