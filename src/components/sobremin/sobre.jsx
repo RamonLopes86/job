@@ -265,7 +265,7 @@ export default function Sobre() {
                         <Image className={estiloSobre.imgEmoji} alt='imagem de um programador e seu computador' src={emo} />
                     </div>
 
-                    <p>Olá, me chamo Ramon , sou Desenvolvedor Web e vou te ajudar  com estratégias visuais a aprimorar sua imagem e seu alcançe profisioinal , transformando ideias em realidade com atendimento personalizado e <strong style={{textTransform:'uppercase'}}>consultoria vitalícia</strong></p>
+                    <p> Vou te ajudar  com estratégias visuais a aprimorar sua imagem e seu alcançe profisioinal , transformando ideias em realidade com atendimento personalizado e <strong style={{textTransform:'uppercase'}}>consultoria vitalícia</strong></p>
 
                 </div>
 

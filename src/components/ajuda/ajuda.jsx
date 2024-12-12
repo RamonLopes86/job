@@ -46,7 +46,7 @@ export default function Ajuda() {
 
         <section  ref={cardRef} id='idajuda' className={estiloAjuda.boxAjuda}>
 
-            <h1 >Como um Projeto Personalziado  pode trazer beneficios ao seu negócio</h1>
+            <h1> Como um Projeto Personalziado  pode trazer beneficios ao seu negócio</h1>
 
 
             <section  className={`${estiloAjuda.boxCard} ${ajudaAnima}`} >

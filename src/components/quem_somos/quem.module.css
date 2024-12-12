@@ -425,9 +425,10 @@
 
 .blOff{
 
-    transform: translateY(-350px);
+    transform: translateY(-100px);
     opacity: 0;
     transition: none;
+    
 
 }
 

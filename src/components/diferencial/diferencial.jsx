@@ -26,48 +26,9 @@ export default function Diferencial() {
 
     }))
 
-
-    const [titAnima , setTitAnima] = useState(true)
-
-
     const cardRef = useRef([])
 
-    const tit = useRef(null)
-
-
-
-    useEffect(()=>{
-
-   
-        const ajuste = ()=>{
-
-            const  vl = tit.current.getBoundingClientRect().top
-
-            if(vl  <= window.innerHeight  &&  vl >= 0){
-
-                setTitAnima(true)
-
-            }else{
-
-                setTitAnima(false)
-            }
-
-        }
-
-
-        window.addEventListener('scroll' , ajuste)
-
-
-
-        return () =>{
-
-            window.removeEventListener('scroll' , ajuste)
-        }
-
-
-    },[])
-
-
+ 
 
     useEffect(() => {
 
@@ -169,7 +130,7 @@ export default function Diferencial() {
 
         <section id='idnegocio' className={estiloDif.boxPai}>
 
-            <h1 ref={tit} className={titAnima ? estiloDif.titOn : estiloDif.titOff}>por que a Lopfy?</h1>
+            <h1>por que a Lopfy?</h1>
 
             <section className={estiloDif.boxCards}>
 

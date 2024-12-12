@@ -49,49 +49,6 @@ export default function Duvidas() {
     }))
                
 
-const tituloRef = useRef(null)
-
-const [condAnima , setCondiAnima] = useState(true)
-
-
-useEffect(()=>{
-
-const animTit = () =>{
-
- 
-
-    const refTop = tituloRef.current.getBoundingClientRect().top
-
-    if(refTop <= window.innerHeight && refTop >=0){
-
-        setCondiAnima(true)
-
-    }else{
-
-        setCondiAnima(false)
-    }
-
-
-}
-
-
-window.addEventListener('scroll' , animTit)
-
-
-return () =>{
-
-
-    window.removeEventListener('scroll' , animTit)
-}
-
-
-},[])
-           
-        
-
-
-
-
 
     function clikPergunta(index) {
 
@@ -208,7 +165,7 @@ return () =>{
 
         <section id='idperguntas' className={estiloAjuda.boxPai}>
 
-            <h1 ref={tituloRef} className={condAnima ? estiloAjuda.tOn : estiloAjuda.tOff}  >Perguntas Comuns</h1>
+            <h1>Perguntas Comuns</h1>
 
 
 
